@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="v30_base.css">
+    <link rel="stylesheet" href="four_cars03.css">
+</head>
+<body>
+    <div id="cart">
+        <p class="cart_step3"></p>
+        <div class="clearboth"></div>
+        <div class="cart_order_sus_info_box">
+            <div class="cart_order_sus_info clearfix">
+                <span></span>
+                <p>恭喜您，订单已提交成功！</p>
+            </div>
+        </div>
+        <div class="wap_head">订单信息</div>
+        <div class="cart_order_table_box">
+            <div class="cart_order_table_box1">
+                您有<span style="color: #dd0000;">1</span>个订单:
+            </div>
+            <div class="cart_order_table_box2">
+                <table class="cart_order_table" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td>订单号：<span>2011570475103</span></td>
+                            <td>
+                                订单金额：
+                                <span>3429</span>
+                            </td>
+                            <td>
+                                支付方式：
+                                <span>在线支付</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <form action="">
+            <div id="pay_methord_box" style="display: block">
+                <p class="pay_methord_titl">支付平台 为了保证及时处理您的订单，请您下单24小时内付款</p>
+                <ul>
+                    <li>
+                        <input type="radio" name="pay_chanel" class="radio" value="1">
+                        <img src="img/four_carts/alipay.jpg" alt="">
+                    </li>
+                    <li>
+                        <input type="radio" name="pay_chanel" class="radio" value="2">
+                        <img src="img/four_carts/99bill.jpg" alt="">（支持各大银行网银支付，无需快钱账号）
+                    </li>
+                </ul>
+                <p class="pay_methord_titl">网银支付（支持信用卡和储蓄卡）</p>
+                <ul>
+                    <li>
+                        <input type="radio" name="pay_chanel" class="radio" value="2">
+                        <img src="img/four_carts/zsyh.jpg" alt="">
+                    </li>
+                    <li>
+                        <input type="radio" name="pay_chanel" class="radio" value="2">
+                        <img src="img/four_carts/gsyh.jpg" alt="">
+                    </li>
+                    <li>
+                        <input type="radio" name="pay_chanel" class="radio" value="2">
+                        <img src="img/four_carts/jsyh.jpg" alt="">
+                    </li>
+                    <li>
+                        <input type="radio" name="pay_chanel" class="radio" value="2">
+                        <img src="img/four_carts/zsyh.jpg" alt="">
+                    </li>
+                    <li>
+                        <input type="radio" name="pay_chanel" class="radio" value="2">
+                        <img src="img/four_carts/zsyh.jpg" alt="">
+                    </li>
+                    <li>
+                        <input type="radio" name="pay_chanel" class="radio" value="2">
+                        <img src="img/four_carts/zsyh.jpg" alt="">
+                    </li>
+                    <li>
+                        <input type="radio" name="pay_chanel" class="radio" value="2">
+                        <img src="img/four_carts/zsyh.jpg" alt="">
+                    </li>
+                    <li>
+                        <input type="radio" name="pay_chanel" class="radio" value="2">
+                        <img src="img/four_carts/zsyh.jpg" alt="">
+                    </li>
+                    <li>
+                        <input type="radio" name="pay_chanel" class="radio" value="2">
+                        <img src="img/four_carts/zsyh.jpg" alt="">
+                    </li>
+                    <li>
+                        <input type="radio" name="pay_chanel" class="radio" value="2">
+                        <img src="img/four_carts/zsyh.jpg" alt="">
+                    </li>
+                    <input type="hidden" name="bank_id" id="bank_id">
+                </ul>
+            </div>
+            <div id="payment_box">
+                <div class="wap_head">支付方式</div>
+                <ul id="current_payment_box">
+                    <li class="payment_up clearfix">
+                        <span class="alipay payment_checked_red">
+                            <img src="img/four_carts/13986771913519.png" alt="">
+                            <i></i>
+                        </span>
+                        <a href="javascript:return false;">
+                            <span class="modify" style="cursor: pointer">修改支付及配送方式</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul id="payment_list_box" style="display:block">
+                    <li>
+                        <input type="radio" name="payment_way" class="radio" checked id="payment_way_online"> 在线支付 （在线支持支付宝及大多数借记卡和部分信用卡
+                        <span class="ship_online_hint"></span>)
+                    </li>
+                    <!-- 到银行转账 -->
+                    <li class="bank_greyback">
+                        <span>
+                            <i class="bank_active_title_circle"></i>信用卡分期支付
+                        </span>
+                        <div class="bank_whiteback">
+                            <ul>
+                                <div class="creditbox">
+                                    <ul style="border: 0;padding:0px;zoom:1">
+                                        <li style="padding-bottom: 8px;">
+                                            <input type="radio" class="radio" name="pay_chanel">
+                                            <img width="120" height="31" class="imgs" src="img/four_carts/151746606930_168x44.png" alt="">
+                                        </li>
+                                        <li style="padding-bottom: 8px;">
+                                            <input type="radio" class="radio" name="pay_chanel">
+                                            <img width="120" height="31" class="imgs" src="img/four_carts/13986741394656.png" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bank_msg" id="bank_msg70" style="display: none">
+                                    <p>
+                                        花呗分期 <span class="color_d00000">（系统为全额支付，如果您需要分期，请在下面选择分期方式）</span>
+                                    </p>
+                                    <p>
+                                        查看分期方式：
+                                        <input type="radio" name="pay_installment" class="radio" id="pay_installment" rate="0.023" value="3">3期&nbsp;&nbsp;
+                                        <input type="radio" name="pay_installment" class="radio" id="pay_installment" rate="0.045" value="6">3期&nbsp;&nbsp;
+                                        <input type="radio" name="pay_installment" class="radio" id="pay_installment" rate="0.075" value="12">3期&nbsp;&nbsp;
+                                    </p>
+                                    <p id="order_amount70">消费额金：￥3429元</p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                                <div class="bank_msg" id="bank_msg37" style="display: none">
+                                    <p>
+                                        5lux-中国银行分期支付 <span class="color_d00000">（系统为全额支付，如果您需要分期，请在下面选择分期方式）</span>
+                                    </p>
+                                    <p>
+                                        查看分期方式：
+                                        <input type="radio" name="pay_installment" class="radio" id="pay_installment" rate="0.023" value="3">3期&nbsp;&nbsp;
+                                        <input type="radio" name="pay_installment" class="radio" id="pay_installment" rate="0.045" value="6">3期&nbsp;&nbsp;
+                                        <input type="radio" name="pay_installment" class="radio" id="pay_installment" rate="0.075" value="12">3期&nbsp;&nbsp;
+                                    </p>
+                                    <p id="order_amount70">消费额金：￥3429元</p>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </ul>
+                        </div>
+                        <!-- 第三方支付 -->
+                        <span>
+                            <i class="bank_active_title_circle"></i>第三方快捷支付
+                        </span>
+                        <div class="bank_whiteback">
+                            <ul>
+                                <li style="padding-bottom: 8px">
+                                    <input type="radio" class="radio radio_on" name="pay_chanel">
+                                    <img src="img/four_carts/14382374021741.jpg" width="120" height="31" class="imgs" alt="">
+                                </li>
+                                <li style="padding-bottom: 8px">
+                                    <input type="radio" class="radio radio_on" name="pay_chanel">
+                                    <img src="img/four_carts/14043650704318.jpg" width="120" height="31" class="imgs" alt="">
+                                    <span style="color: #d00000;cursor:pointer;margin-left:10px;" class="promote_recommend">&nbsp;</span>
+                                    <span style="color: #d00000;cursor:pointer;margin-left: 10px;" class="promote_recommend_upop">推荐：无需开通网银，大额支付单笔最高限额2万元！</span>
+                                </li>
+                                <li style="padding-bottom: 8px">
+                                    <input type="radio" class="radio radio_on" name="pay_chanel">
+                                    <img src="img/four_carts/13986780017704.png" width="120" height="31" class="imgs" alt="">
+                                </li>
+                                <li style="padding-bottom: 8px">
+                                    <input type="radio" class="radio radio_on" name="pay_chanel">
+                                    <img src="img/four_carts/14073768984619.png" width="120" height="31" class="imgs" alt="">
+                                </li>
+                                <li style="padding-bottom: 8px">
+                                    <input type="radio" class="radio radio_on" name="pay_chanel">
+                                    <img src="img/four_carts/13986771913519.png" width="120" height="31" class="imgs" alt="">
+                                    <span style="color: #d00000;cursor:pointer;" class="promote_recommend_upop">提示：快捷支付单笔限额500元！</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 在线支付 -->
+                        <span>
+                            <i class="bank_active_title_circle"></i>银行在线支付
+                        </span>
+                        <div class="bank_whiteback">
+                            <ul>
+                                <li style="padding-bottom: 8px;">
+                                    <input type="radio" class="radio">
+                                    <img src="img/four_carts/13986767465678.png" width="120" height="31" class="imgs" alt="">
+                                </li>
+                                <li style="padding-bottom: 8px;">
+                                    <input type="radio" class="radio">
+                                    <img src="img/four_carts/13986766492689.png" width="120" height="31" class="imgs" alt="">
+                                </li>
+                                <li style="padding-bottom: 8px;">
+                                    <input type="radio" class="radio">
+                                    <img src="img/four_carts/13986741394656.png" width="120" height="31" class="imgs" alt="">
+                                </li>
+                                <li style="padding-bottom: 8px;">
+                                    <input type="radio" class="radio">
+                                    <img src="img/four_carts/13986812974540.png" width="120" height="31" class="imgs" alt="">
+                                </li>
+                                <li style="padding-bottom: 8px;">
+                                    <input type="radio" class="radio">
+                                    <img src="img/four_carts/13986811554661.png" width="120" height="31" class="imgs" alt="">
+                                </li>
+                                <li style="padding-bottom: 8px;">
+                                    <input type="radio" class="radio">
+                                    <img src="img/four_carts/13986810813001.png" width="120" height="31" class="imgs" alt="">
+                                </li>
+                                <li style="padding-bottom: 8px;">
+                                    <input type="radio" class="radio">
+                                    <img src="img/four_carts/13986809408469.png" width="120" height="31" class="imgs" alt="">
+                                </li>
+                                <li style="padding-bottom: 8px;">
+                                    <input type="radio" class="radio">
+                                    <img src="img/four_carts/13986808768534.png" width="120" height="31" class="imgs" alt="">
+                                </li>
+                                <li style="padding-bottom: 8px;">
+                                    <input type="radio" class="radio">
+                                    <img src="img/four_carts/13986808188500.png" width="120" height="31" class="imgs" alt="">
+                                </li>
+                                <li style="padding-bottom: 8px;">
+                                    <input type="radio" class="radio">
+                                    <img src="img/four_carts/13986807547535.png" width="120" height="31" class="imgs" alt="">
+                                </li>
+                                <li style="padding-bottom: 8px;">
+                                    <input type="radio" class="radio">
+                                    <img src="img/four_carts/13986806681956.png" width="120" height="31" class="imgs" alt="">
+                                </li>
+                                <li style="padding-bottom: 8px;">
+                                    <input type="radio" class="radio">
+                                    <img src="img/four_carts/13986818538284.png" width="120" height="31" class="imgs" alt="">
+                                </li>
+                                <li style="padding-bottom: 8px;">
+                                    <input type="radio" class="radio">
+                                    <img src="img/four_carts/13986805447105.png" width="120" height="31" class="imgs" alt="">
+                                </li>
+                                <li style="padding-bottom: 8px;">
+                                    <input type="radio" class="radio">
+                                    <img src="img/four_carts/14054262997398.jpg" width="120" height="31" class="imgs" alt="">
+                                </li>
+                                <li style="padding-bottom: 8px;">
+                                    <input type="radio" class="radio">
+                                    <img src="img/four_carts/14054265096883.jpg" width="120" height="31" class="imgs" alt="">
+                                </li>
+                                <li style="padding-bottom: 8px;">
+                                    <input type="radio" class="radio">
+                                    <img src="img/four_carts/14054265071504.jpg" width="120" height="31" class="imgs" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 余额支付 -->
+                        <span>
+                            <i class="bank_active_title_circle"></i>余额支付 : 使用您的账户余额进行订单全额支付
+                        </span>
+                        <div class="bank_whiteback">
+                            <ul>
+                                <li style="padding-bottom:8px;">
+                                    <input type="radio" class="radio">
+                                    <img src="img/four_carts/14025652784806.jpg" width="120" height="31" class="imgs" alt="">
+                                </li>
+                                <span>只有余额大于等于本订单金额时，才能选择全额余额支付，如果您的余额不足以支付本订单，请选择在线支付，同时您可以在本页左下角选择使用余额支付部分金额按钮来使用您的账余额。</span>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 银行汇款/转账 -->
+                    <li style="clear: both;">
+                        <input type="radio" name="pay_chanel" class="radio" id="payment_way_banktran" value="payment_way_banktran">银行汇款/转帐
+                        <span class="ship_handtohand_hint"></span>
+                        <!-- display:table-cell.默认情况下是隐藏 -->
+                        <ul class="zhuan_bank_wrap" style="display:block">
+                            <li style="padding-bottom: 8px;line-height:22px">
+                                
+                            您可以选择以下银行账户给我们转账，24小时内我们的工作人员将通过您订单中留下的电话同您取得联系，为您确认货款是否到账。
+                        
+                            </li>
+                            <li class="li-bank">
+                                <span class="bank_icon_bg">
+                                    招商银行 北京分行万达广场支行；账户名称：瑞美嘉信国际信息技术（北京）有限公司；账号：1109 0686 7210 802
+                                </span>
+                            </li>
+                            <li class="li-bank">
+                                <span class="bank_icon_bg"> 中国银行 中国银行北京长虹桥支行；账户名称：瑞美嘉信国际信息技术（北京）有限公司；账号：3272 5738 7249</span>
+                            </li>
+                            <li class="li-bank">
+                                <span class="bank_icon_bg">交通银行 交通银行北京工体北路支行；账户名称：瑞美嘉信国际信息技术（北京）有限公司；账号：1100 6086 9018 1500 34696</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- 货到付款 -->
+                    <!-- 未选中的是时候class="radio" 选中的时候radio_on -->
+                    <li style="clear: both;">
+                        <input type="button" name="pay_chanel" class="confirm_ok" value="保存支付方式">
+                        <input type="button" value="取消" class="confirm_cancel">
+                    </li>
+                    <!-- 自取上门
+                    <li style="padding-top:10px;overflow:hidden;clear:both">
+                        <input type="button" value="保存支付方式" class="all_btn allred_btn" style="float: left">
+                        <input type="button" value="取消" class="all_btn allgray_btn" style="float: left;margin-left:10px;">
+                        <li style="float: left;clear:both;height:5px">&nbsp;</li>
+                    </li>
+                    <li style="float: none;clear:both;height:5px">&nbsp;</li> -->
+                </ul>
+            </div>
+            <div class="clearboth">&nbsp;</div>
+            <div class="gotopay clearfix">
+                <p class="pay_btn">
+                    <input type="botton" class="all_bigBtn allred_btn" value="去付款">
+                </p>
+                <div style="height: 35px;line-height: 35px;margin-right: 20px;color:#666;font-weight: bold;" class="facepay_hint">
+                    您的订单已经提交成功，非常感谢您的惠顾！
+                    <a href="###"></a>
+                    <a href="###">进入个人中心>></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

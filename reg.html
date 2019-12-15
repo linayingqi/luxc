@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册页面</title>
+	<link rel="stylesheet" href="v30_base.css">
+	<link rel="stylesheet" href="base.css">
+	<link rel="stylesheet" href="reg.css">
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="login-header">
+		<div class="login-header-center">
+			<a href="####" class="fivelux-logo"></a>
+			<span class="header-line"></span>
+			<span class="header-text">欢迎登陆</span>
+			<div class="header-right fr">
+				<div style="display: table-cell;vertical-align:middle">
+					<i></i>
+					<p>客服热线：4008-6767-38</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 主题部分 -->
+	<div class="login-warpper">
+		<div class="login-center-wp clearfix">
+			<div class="login-c-right">
+				<div class="register-c-right">
+					<div class="rigister-title">注册第五大道</div>
+					<form action="" id="Myform">
+						<input type="hidden" name="username">
+						<input type="hidden" name="email">
+						<input type="text" id="userName" name="mobile_phone" class="heig48 w300 text" style="margin-bottom: 8px" placeholder="手机号">
+						<div class="reg-errorTip">
+							<div class="reg-errorTip-box error_tip_mobile">
+								<i></i>
+								<p>手机号格式输入错误</p>
+							</div>
+						</div>
+						<div class="code" style="margin-top: 8px;text-align:left;padding-bottom:8px;display:none">
+							<input type="text" id="text_code" name="text_code" class="heig48 w152 text" style="margin-right: 28px" placeholder="请输入图形码">
+							<span style="width: 78px;height:50px;display:inline-block;vertical-align:top;margin-right:9px;">
+								<img src="img/login/gencode.png" width="100%" height="100%" style="vertical-align: top" class="codeimg" alt="">
+							</span>
+							<span style="color: #ff9900;font-size: 14px;vertical-align: middle;cursor: pointer;" class="exchangecode">换一张</span>
+						</div>
+						<div class="reg-errorTip">
+							<div class="reg-errorTip" id="text_code_errot" style="display: none">
+								<i></i>
+								<p>请输入图形码</p>
+							</div>
+						</div>
+						<div class="codeWarpper" style="margin-top: 8px">
+							<input type="text" id="code" name="mobile_phone_code" class="heig48 w152 text" placeholder="请输入验证码">
+							<span id="get_phone_button">获取验证码</span>
+						</div>
+						<input type="password" id="pwd" name="password" class="heig48 w300 password" style="margin-bottom:8px;" placeholder="请输入密码">
+						<div class="seg-tip" style="display:none">
+							<div class="seg-tip-box">
+								<i></i>
+								<p>建议使用字母、数字的组合，6-20个字符</p>
+							</div>
+						</div>
+						<input type="password" id="pwd2" name="password_confirm" class="heig48 w300 password" style="margin-top:8px" placeholder="确认密码">
+						<div class="reg-errorTip">
+							<div class="reg-errorTip-box" id="password_confirm_erro" style="display: none">
+								<i></i>
+								<p>两次密码输入不一致</p>
+							</div>
+						</div>
+						<input type="button" value="立即注册" class="sub-btn">
+						<div class="rig-bottom">
+							<label>
+								<input type="checkbox" id="remember" class="comfirmiter" value="1" checked>
+								<i></i>
+							</label>
+							<p>我已阅读并同意</p>
+							<a href="" class="fir-link">《第五大道用户协议》</a>
+							<a href="" class="sec-link fr">已有账号?</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

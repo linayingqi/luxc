@@ -1,0 +1,549 @@
+.lux_p{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background: #4200de;
+}
+.lux_p a{
+    display: block;
+    height: 80px;
+    margin: 0 auto;
+}
+.v30_head{
+    height: 30px;
+    background: #f2f2f2;
+}
+.v30_head .v30_1210{
+    width: 1210px;
+    margin: 0 auto;
+    position: relative;
+}
+.v30_head dl{
+    display: inline-block;
+    color: #666;
+}
+.v30_head dl dt{
+    line-height: 30px;
+    height: 30px;
+    width: 100%;
+    position: relative;
+}
+.v30_head dl dt i{
+    position: absolute;
+    height: 12px;
+    right: 0px;
+    top: 9px;
+    border-left: 1px solid #dfdfdf;
+}
+.v30_head dl dt,.v30_head dl dd{
+    display: inline-block;
+    float: left;
+    /* text-align: center; */
+}
+.v30_head .v30_gohome_dl{
+    width: 110px;
+}
+#lux_five{
+    text-align: center;
+}
+.v30_gohome_dl b{
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    background: url(img/header/home.png)no-repeat center;
+    position: absolute;
+    left: 2px;
+    top: 7px;
+}
+.v30_gohome_dl a{
+    display: inline-block;
+    margin-left: 7px;
+}
+/* 贵宾专线 */
+.v30h_phone{
+    padding-left: 6px;
+}
+.v30h_phone dt{
+    text-align: left;
+}
+.v30h_phone dt b{
+    width: 25px;
+    height: 30px;
+    display: inline-block;
+    float: left;
+    background: url(img/header/brandstore_share.png)no-repeat -348px -338px;
+}
+.header_info_right{
+    width: 604px;
+    float: right;
+    line-height: 30px;
+    height: 30px;
+    position: relative;
+    vertical-align: middle;
+}
+.v30h_mobile{
+    width: 106px;
+    padding: 0 11px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 33;
+    cursor: pointer;
+}
+.v30h_mobile:hover{
+    background: #fff;
+}
+.v30h_mobile dt{
+    padding-left: 5px;
+    background: url(img/header/brandstore_share.png)no-repeat -218px -369px;
+}
+.v30h_mobile dt:hover{
+    background: url(img/header/brandstore_share.png)no-repeat -218px -404px;
+    color: #d00000;
+}
+.v30h_mobile .v30hm_qr{
+    clear: both;
+    display: none;
+}
+.v30hm_qr img{
+    width: 106px;
+}
+.v30hm_qr ul li{
+    line-height: 20px;
+    font-size: 13px;
+}
+.v30hm_qr ul li span{
+    color: #dd0000;
+    font-size: 16px;
+}
+.v30h_mobile:hover .v30hm_qr{
+    display: block;
+    /* box-shadow: 0px 2px 5px #999; */
+}
+/* 帮助中心 */
+.v30h_help{
+    position: absolute;
+    width: 85px;
+    right: 130px;
+    top: 0px;
+}
+#help_51{
+    text-align: center;
+}
+/* 我的第大道 */
+.v30h_my5lux{
+    width: 130px;
+    position: absolute;
+    right: 215px;
+    top: 0px;
+    z-index: 150;
+}
+.v30h_my5lux dt span{
+    float: left;
+    padding-left: 15px;
+}
+.v30h_my5lux dt{
+    background: url(img/header/brandstore_share.png)no-repeat -253px -436px;
+}
+.v30h_my5lux dt:hover{
+    background: url(img/header/brandstore_share.png)no-repeat -253px -464px;
+    color: #d00000;
+}
+.v30h_my5lux .v30h_myorder{
+    display: none;
+}
+.v30h_my5lux dd{
+    width: 100%;
+    background: #fff;
+}
+.v30h_my5lux dd ul li{
+    line-height: 30px;
+    text-align: center;
+}
+.v30h_my5lux:hover{
+    background: #fff;
+}
+.v30h_my5lux:hover dd{
+    display: block;
+}
+/* 登陆 */
+.v30h_logbox{
+    /* width: 188px; */
+    height: 30px;
+    float: left;
+    position: absolute;
+    /* right: 35px; */
+    /* left: 35px; */
+    left: 60px;
+    top: 0px;
+}
+.v30h_logbox ._nandlog{
+    width: 100px;
+}
+._nandlog dt span{
+    padding-right: 20px;
+}
+._nandlog dt span:hover{
+    color: #d00000;
+}
+.v30h_logbox ._randout{
+    width: 88px;
+}
+.v30h_logbox ._randout_s{
+    width: 22px;
+    height: 24px;
+    float: left;
+    background: url(img/header/youli.gif)no-repeat;
+    margin: 0 5px 0 17px;
+}
+.v30h_logbox ._randout a{
+    float: right;
+    margin-right: 18px;
+}
+/*头 布中间部分*/
+.v30h_mid{
+    background: #fff;
+}
+.v30_1210{
+    width: 1210px;
+    margin: 0 auto;
+}
+.v30hm_logo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 244px;
+    height: 110px;
+}
+.v30hm_ad{
+    position: absolute;
+    top: 14px;
+    left: 290px;
+    width: 142px;
+    height: 80px;
+    overflow: hidden;
+}
+.v30hm_ad img{
+    vertical-align: middle;
+}
+.v30hm_serach{
+    overflow: hidden;
+    position: absolute;
+    /* width: 347px;
+    height: 68px; */
+    left: 485px;
+    top: 36px;
+}
+.v30hm_serach .in_con{
+    width: 343px;
+    padding: 2px 2px;
+    background: #c69c6d;
+    height: 34px;
+}
+.v30hm_serach .search_input{
+    outline: none;
+    width: 260px;
+    height: 34px;
+    line-height: 34px;
+    vertical-align: middle;
+    border: none;
+    background: #fff;
+    padding-left: 3px;
+    float: left;
+}
+.search_b{
+    width: 80px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border: none;
+    float: left;
+    color: #fff;
+    font-size: 15px;
+    background: none;
+}
+.inc_adlist{
+    clear: both;
+}
+.inc_adlist li{
+    display: inline-block;
+    float: left;
+    color: #999;
+    font-size: 11px;
+    padding-right: 25px;
+    line-height: 32px;
+}
+.v30hm_cart{
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    z-index: 30;
+}
+.v30hm_cart dl{
+    width: 290px;
+    background: #fff;
+    position: relative;
+}
+.v30hm_cart dl,.v30hm_cart dl dd{
+    display: inline-block;
+}
+.v30hm_cart dl dt{
+    width: 94px;
+    height: 32px;
+    line-height: 32px;
+    text-indent: 45px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    position: relative;
+    float: right;
+    color: #666;
+    background: url(img/header/brandstore_share.png)no-repeat -376px -405px;
+}
+.v30hm_cart dl dt img{
+    position: absolute;
+    left: 10px;
+    top: 2px;
+}
+.v30hm_cartbox .shopping_bag_cont{
+    display: none;
+    clear: both;
+    width: 268px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    background: #fff;
+}
+.v30hm_cartbox ul{
+    max-height: 335px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.v30hm_cart dl dt span{
+    color: #d00000;
+}
+.v30hm_cart dl b{
+    display: none; 
+    width: 94px;
+    height: 3px;
+    position: absolute;
+    background: #fff;
+    right: 1px;
+    top: 32px;
+    z-index: 1;
+}
+.v30hm_cart:hover .shopping_bag_cont,.v30hm_cart:hover b{
+    display: block;
+}
+.overseaenter{
+    position: absolute;
+    top: 35px;
+    z-index: 30;
+    right: 123px;
+    width: 200px;
+    height: 30px;
+    background: url(img/header/overseadef.jpg)no-repeat;
+    background-size:100% 100%;
+    transition: 1.5s; 
+}
+.overseaenter:hover{
+    background: url(img/header/overseahov.jpg)no-repeat;
+}
+/* 导航栏 */
+.nav{
+    width: 100%;
+    height: 38px;
+    background: url(img/header/navi_1pxbg.png)repeat-x;
+    vertical-align: middle;
+    box-shadow: 0 4px 4px #c7c6c6;
+}
+.v30_1210{
+    width: 1210px;
+    margin: 0 auto;
+}
+.menu{
+    clear: both;
+    height: 40px;
+    width: 1210px;
+    margin: 0 auto;
+    position: relative;
+}
+.menu>li{
+    display: inline-block;
+    float: left;
+    z-index: 20;
+    font-size: 14px;
+    text-align: center;
+    font-family: "微软雅黑";
+    height: 40px;
+    line-height: 40px;
+}
+li.type_5luxli a.type_5lux{
+    width: 130px;
+    background: url(img/header/lux_index.png)no-repeat -8px -215px;
+    font-size: 14px;
+    font-weight: bold;
+    height: 38px;
+    color: #fff;
+    display: inline-block;
+    z-index: 999;
+}
+/* 商品分类 */
+.leftmenu{
+    width: 130px;
+    display: none;
+    min-height: 585px;
+    position: relative;
+    z-index: 1000;
+    vertical-align: top;
+}
+.leftmenu ul li{
+    vertical-align: top;
+    position: relative;
+    width: 130px;
+    z-index: 1000;
+}
+.leftmenu ul li .group{
+    background: #fff;
+    filter: alpha(opacity=85);
+    opacity: 0.85;
+    height: 36px;
+    text-align: left;
+    line-height: 36px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 48px;
+}
+.leftmenu ul li .group i{
+    position: absolute;
+    right: 2px;
+    top: 0;
+    height: 36px;
+    width: 20px;
+    display: none;
+    background: url(img/header/share02.png)no-repeat -304px -33px; 
+}
+/* .leftmenu ul li .group:hover{
+    background-color: #fff;
+}
+.menu:hover .leftmenu{
+    display: block;
+} */
+.menu_show{
+    width: 800px;
+    background-color: #fff;
+    position: absolute;
+    left: 130px;
+    top: 0px;
+    min-height: 220px;
+}
+.showshop{
+    background-color: #fff;
+    min-width: 605px;
+    max-width: 750px;
+    border-bottom: #d7d7d7 1px solid;
+    margin: 10px 0px 10px 20px;
+    float: left;
+    clear: both;
+    overflow: hidden;
+    line-height: 25px;
+}
+.menu_show h2{
+    float: left;
+    color: #cf0201;
+    width: 105px;
+    font-size: 14px;
+    font-style: normal;
+}
+.menu_show h2 a{
+    font-size: 14px;
+    color: #cf0201;
+}
+/* 品牌 最新 女士 男士 生活馆 海外馆。。。。。。。 */
+.menu .menu_a{
+    display: block;
+    width: 82px;
+    height: 38px;
+}
+.menu .menu_a:hover{
+    color: #fff;
+}
+.menu_a:link,.menu_a:visited{
+    color: #c8a985;
+}
+.nv_findstore i{
+    display: inline-block;
+    float: left;
+    width: 19px;
+    height: 40px;
+    line-height: 40px;
+    background: url(img/header/share02.png)no-repeat -58px -169px;
+    margin-left: 23px;
+}
+/* .nv_findstore i:hover{
+    background-position: -366px -252px;
+} */
+.nv_findstore span{
+    display: inline-block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+.v30_nvbox .icon_wrap{
+    position: absolute;
+    right: 15px;
+    top: 0;
+    height: 40px;
+    line-height: 40px;
+    /* overflow: hidden; */
+    z-index:10;
+}
+.v30_nvbox .icon_wrap li{
+    float: left;
+    margin-right: 12px;
+    width: 30px;
+    overflow: hidden;
+}
+.v30_nvbox .icon_wrap .divlist{
+    width: 200px;
+    overflow: hidden;
+}
+.v30_nvbox .icon_wrap span{
+    display: inline-block;
+    width: 30px;
+    height:40px;
+    line-height: 40px;
+    float: left;
+    margin-right: 3px;
+}
+.v30_nvbox .icon_wrap b{
+    font-weight:400;
+    float:left;
+    color: #fff;
+}
+.v30_nvbox .icon_wrap .divlist a{
+    height:40px;
+    display: inline-block;
+}
+.divlist01 span{
+    background: url(img/header/share02.png)no-repeat -237px -66px;
+}
+.divlist02 span{
+    background: url(img/header/share02.png)no-repeat -296px -66px;
+}
+.divlist03 span{
+    background: url(img/header/share02.png)no-repeat -354px -66px;
+}
+.v30_nvbox .overseaslogo{
+    position: absolute;
+    top:0;
+    line-height: 38px;
+    overflow: hidden;
+    z-index:10;
+    right: 144px;
+    width: 100px;
+    height: 38px;
+    background: url(img/header/overseaslogo.gif)no-repeat;
+    background-size:100% 100%; 
+}

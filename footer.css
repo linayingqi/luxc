@@ -1,0 +1,120 @@
+#footer_message_bg{
+    background: url(img/footer/footer_message_bg.jpg) center;
+    border-top: 1px solid #c9c9c9;
+}
+#footer_message{
+    width: 1210px;
+    height: 600px;
+    margin: 0 auto;
+}
+#footer_message a{
+    color: #333;
+    font-size: 12px;
+}
+#footer_message a:hover{
+    text-decoration: underline;
+}
+#footer_message .footer_message_top{
+    height: 116px;
+    border-bottom: 1px solid #c9c9c9;
+    clear: both;
+}
+.footer_message_top li{
+    width: 242px;
+    height: 64px;
+    float: left;
+    margin-top: 26px;
+}
+.footer_message_top img{
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 5px;
+    cursor: pointer;
+    vertical-align: top;
+    float: left;
+}
+.footer_message_top01_r{
+    display: inline-block;
+    float: left;
+    width: 160px;
+    height: 48px;
+    margin-top: 8px;
+}
+.footer_message_top01_r .p1{
+    font-weight: bold;
+}
+#footer_message .footer_message_ctr{
+    height: 283px;
+    clear: both;
+}
+.footer_message_ctr_l{
+    float: left;
+}
+.footer_message_ctr_l ul{
+    padding-left: 20px;
+}
+.footer_message_ctr_l li{
+    width: 185px;
+    overflow: hidden;
+    float: left;
+}
+.footer_message_ctr_l span{
+    display: block;
+}
+.footer_message_ctr_l .sp01{
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #000;
+}
+.footer_message_ctr_l a:hover{
+    text-decoration: underline;
+}
+.footer_message_ctr_l .pht_app{
+    width: 140px;
+    height: 283px
+}
+.pht_app img{
+    display: block;
+    width: 80px;
+    height: 80px;
+    vertical-align: top;
+}
+.footer_message_ctr_l .pht_weibo{
+    width: 125px;
+    height: 283px;
+}
+.pht_weibo img{
+    display: block;
+    width: 80px;
+    height: 80px;
+    vertical-align: top;
+}
+#footer_message .footer_message_btm a{
+    color:#fff;
+}
+#footer_message .footer_message_btm{
+    text-align: center;
+    color: #fff;
+}
+.footer_message_btm_t{
+    line-height: 66px;
+}
+.footer_message_btm_t a+b{
+   display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: #fff;
+    margin: 0 4px;
+    vertical-align: middle;
+}
+.footer_about a+b{
+    display: inline-block;
+     width: 1px;
+     height: 12px;
+     background: #fff;
+     margin: 0 4px;
+     vertical-align: middle;
+ }

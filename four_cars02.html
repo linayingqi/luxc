@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="v30_base.css">
+    <link rel="stylesheet" href="four_cars02.css">
+</head>
+<body>
+    <div id="cart">
+        <p class="cart_step2">
+            <a href="##" style="height: 40px;width:135px;display:block;"></a>
+        </p>
+        <div class="clearboth"></div>
+        <div id="cart_address">
+            <div class="wap_head">收货信息</div>
+            <div class="cart_address_box">
+                <div id="current_address_box" style="display: none">
+                    <ul>
+                        <!-- 未写内容 -->
+                        <li class="clearfix c_addresssbox">
+                            <span id="current_address" class="c_address">北京市西城区收</span>
+                            <span style="cursor: pointer;color:#d00000" class="a_change">修改地址</span>
+                        </li>
+                    </ul>
+                </div>
+                <div id="address_list" style="display: block;">
+                    <ul>
+                        <li>
+                            <input type="radio" id="0" name="addresslist" checked class="radio">&nbsp;&nbsp;
+                            <span class="receiver_detail">北京市西城区</span>
+                            <a href="javascript:void(0)">编辑</a>
+                        </li>
+                        <li class="alert">
+                            <input type="radio" id="newaddress" name="addresslist" class="radio">添加新地址
+                        </li>
+                    </ul>
+                </div>
+                <div id="infor_box" style="display:none">
+                    <span id="main_alert_box"></span>
+                    <ul>
+                        <li>
+                            <label for="">收获人姓名：</label>
+                            <input type="text" id="receiver_name" class="inputshort">
+                        </li>
+                        <li>
+                            <label for="">收货人地址：</label>
+                            <input type="text" id="receiver_province_act" name="receiver_actbox" class="inputshort" readonly>
+                            <input id="receiver_province_act_hiden" type="hidden" readonly value="19">
+                            <select name="" id="receiver_province">
+                                    <option value="">请选择</option>
+                                    <optiion value="2">北京</optiion>
+                                    <optiion value="3">安徽</optiion>
+                                    <optiion value="4">福建</optiion>
+                                    <optiion value="5">甘肃</optiion>
+                                    <optiion value="6">广东</optiion>
+                                </select>
+                                <input type="text" id="receiver_city_act" name="receiver_actbox" class="inputshort" readonly>
+                                <input type="hidden" id="receiver_city_act_hiden">
+                                <select name="" id="receiver_city">
+                                    <option value="">请选择</option>
+                                </select>
+                                <input type="text" id="receiver_district_act" name="receiver_actbox" class="inputshort" readonly>
+                                <input type="hidden" id="receiver_district_act_hiden" readonly value="2165">
+                                <select name="" id="receiver_district">
+                                    <option value="">请选择</option>
+                                </select>
+                        </li>
+                        <li>
+                            <label for="">详细的地址：</label>
+                            <input type="text" class="input-medium" id="receiver_address">
+                        </li>
+                        <li>
+                            <label for="">手机的号码：</label>
+                            <input type="text" id="mobile_phone" class="inputshort">
+                        </li>
+                        <li style="overflow: hidden">
+                            <input type="button" id="add_new_address" class="all_btn allred_btn" value="添加并保存">
+                            <input type="button" id="add_new_address_cancel" class="all_btn allgray_btn" value="取消">
+                        </li>
+                    </ul>
+                </div>
+                <div id="confirm_address_box" style="display:block">
+                    <ul>
+                        <li style="overflow: hidden">
+                            <input type="button" value="保存地址" id="save_address" class="all_btn allred_btn">
+                            <input type="button" id="save_address_cancel" class="all_btn allgray_btn" value="取消">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 海关验证 -->
+        <div id="real_name" style="margin-top:20px;display:none;">
+            <div class="wap_head">实名认证</div>
+            <div class="cart_address_box">
+                <div id="current_realname_box" style="display: block">
+                    <ul>
+                        <li class="clearfix c_addressbox">
+                            <span id="current_address" class="c_address">海关验证商品需要添加身份信息</span>
+                            <span style="cursor: pointer;color:#d00000" class="a_change">添加</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 发货时间 -->
+        <div id="cart_delivery_box">
+            <div class="wap_head">送货时间</div>
+            <ul>
+                <li>
+                    <input type="radio" name="delivery_time" class="radio" checked id="1">只工作日送货
+                </li>
+                <li>
+                    <input type="radio" name="delivery_time" class="radio" id="2">随时送货
+                </li>
+                <li>
+                    <input type="radio" name="delivery_time" class="radio" id="3">双休日、假期送货（工作日不送货）
+                </li>
+            </ul>
+        </div>
+        <!-- 支付方式 -->
+        <div id="payment_box">
+            <div class="wap_head">支付方式</div>
+            <ul id="current_payment_box" style="display: none;">
+                <li class="payment_up clearfix">
+                    <span class="alipay payment_checked_red">
+                        <img src="img/four_carts/13986771913519.png" alt="">
+                        <i></i>
+                    </span>
+                    <a href="javascript:return false;">
+                        <span class="modify" style="cursor: pointer">修改支付及配送方式</span>
+                    </a>
+                </li>
+            </ul>
+            <ul id="payment_list_box" style="display:block">
+                <li>
+                    <input type="radio" name="payment_way" class="radio" checked id="payment_way_online"> 在线支付 （在线支持支付宝及大多数借记卡和部分信用卡
+                    <span class="ship_online_hint"></span>)
+                </li>
+                <!-- 到银行转账 -->
+                <li class="bank_greyback">
+                    <span>
+                        <i class="bank_active_title_circle"></i>信用卡分期支付
+                    </span>
+                    <div class="bank_whiteback">
+                        <ul>
+                            <div class="creditbox">
+                                <ul style="border: 0;padding:0px;zoom:1">
+                                    <li style="padding-bottom: 8px;">
+                                        <input type="radio" class="radio" name="pay_chanel">
+                                        <img width="120" height="31" class="imgs" src="img/four_carts/151746606930_168x44.png" alt="">
+                                    </li>
+                                    <li style="padding-bottom: 8px;">
+                                        <input type="radio" class="radio" name="pay_chanel">
+                                        <img width="120" height="31" class="imgs" src="img/four_carts/13986741394656.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bank_msg" id="bank_msg70" style="display: none">
+                                <p>
+                                    花呗分期 <span class="color_d00000">（系统为全额支付，如果您需要分期，请在下面选择分期方式）</span>
+                                </p>
+                                <p>
+                                    查看分期方式：
+                                    <input type="radio" name="pay_installment" class="radio" id="pay_installment" rate="0.023" value="3">3期&nbsp;&nbsp;
+                                    <input type="radio" name="pay_installment" class="radio" id="pay_installment" rate="0.045" value="6">3期&nbsp;&nbsp;
+                                    <input type="radio" name="pay_installment" class="radio" id="pay_installment" rate="0.075" value="12">3期&nbsp;&nbsp;
+                                </p>
+                                <p id="order_amount70">消费额金：￥3429元</p>
+                                <p></p>
+                                <p></p>
+                            </div>
+                            <div class="bank_msg" id="bank_msg37" style="display: none">
+                                <p>
+                                    5lux-中国银行分期支付 <span class="color_d00000">（系统为全额支付，如果您需要分期，请在下面选择分期方式）</span>
+                                </p>
+                                <p>
+                                    查看分期方式：
+                                    <input type="radio" name="pay_installment" class="radio" id="pay_installment" rate="0.023" value="3">3期&nbsp;&nbsp;
+                                    <input type="radio" name="pay_installment" class="radio" id="pay_installment" rate="0.045" value="6">3期&nbsp;&nbsp;
+                                    <input type="radio" name="pay_installment" class="radio" id="pay_installment" rate="0.075" value="12">3期&nbsp;&nbsp;
+                                </p>
+                                <p id="order_amount70">消费额金：￥3429元</p>
+                                <p></p>
+                                <p></p>
+                            </div>
+                        </ul>
+                    </div>
+                    <!-- 第三方支付 -->
+                    <span>
+                        <i class="bank_active_title_circle"></i>第三方快捷支付
+                    </span>
+                    <div class="bank_whiteback">
+                        <ul>
+                            <li style="padding-bottom: 8px">
+                                <input type="radio" class="radio radio_on" name="pay_chanel">
+                                <img src="img/four_carts/14382374021741.jpg" width="120" height="31" class="imgs" alt="">
+                            </li>
+                            <li style="padding-bottom: 8px">
+                                <input type="radio" class="radio radio_on" name="pay_chanel">
+                                <img src="img/four_carts/14043650704318.jpg" width="120" height="31" class="imgs" alt="">
+                                <span style="color: #d00000;cursor:pointer;margin-left:10px;" class="promote_recommend">&nbsp;</span>
+                                <span style="color: #d00000;cursor:pointer;margin-left: 10px;" class="promote_recommend_upop">推荐：无需开通网银，大额支付单笔最高限额2万元！</span>
+                            </li>
+                            <li style="padding-bottom: 8px">
+                                <input type="radio" class="radio radio_on" name="pay_chanel">
+                                <img src="img/four_carts/13986780017704.png" width="120" height="31" class="imgs" alt="">
+                            </li>
+                            <li style="padding-bottom: 8px">
+                                <input type="radio" class="radio radio_on" name="pay_chanel">
+                                <img src="img/four_carts/14073768984619.png" width="120" height="31" class="imgs" alt="">
+                            </li>
+                            <li style="padding-bottom: 8px">
+                                <input type="radio" class="radio radio_on" name="pay_chanel">
+                                <img src="img/four_carts/13986771913519.png" width="120" height="31" class="imgs" alt="">
+                                <span style="color: #d00000;cursor:pointer;" class="promote_recommend_upop">提示：快捷支付单笔限额500元！</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 在线支付 -->
+                    <span>
+                        <i class="bank_active_title_circle"></i>银行在线支付
+                    </span>
+                    <div class="bank_whiteback">
+                        <ul>
+                            <li style="padding-bottom: 8px;">
+                                <input type="radio" class="radio">
+                                <img src="img/four_carts/13986767465678.png" width="120" height="31" class="imgs" alt="">
+                            </li>
+                            <li style="padding-bottom: 8px;">
+                                <input type="radio" class="radio">
+                                <img src="img/four_carts/13986766492689.png" width="120" height="31" class="imgs" alt="">
+                            </li>
+                            <li style="padding-bottom: 8px;">
+                                <input type="radio" class="radio">
+                                <img src="img/four_carts/13986741394656.png" width="120" height="31" class="imgs" alt="">
+                            </li>
+                            <li style="padding-bottom: 8px;">
+                                <input type="radio" class="radio">
+                                <img src="img/four_carts/13986812974540.png" width="120" height="31" class="imgs" alt="">
+                            </li>
+                            <li style="padding-bottom: 8px;">
+                                <input type="radio" class="radio">
+                                <img src="img/four_carts/13986811554661.png" width="120" height="31" class="imgs" alt="">
+                            </li>
+                            <li style="padding-bottom: 8px;">
+                                <input type="radio" class="radio">
+                                <img src="img/four_carts/13986810813001.png" width="120" height="31" class="imgs" alt="">
+                            </li>
+                            <li style="padding-bottom: 8px;">
+                                <input type="radio" class="radio">
+                                <img src="img/four_carts/13986809408469.png" width="120" height="31" class="imgs" alt="">
+                            </li>
+                            <li style="padding-bottom: 8px;">
+                                <input type="radio" class="radio">
+                                <img src="img/four_carts/13986808768534.png" width="120" height="31" class="imgs" alt="">
+                            </li>
+                            <li style="padding-bottom: 8px;">
+                                <input type="radio" class="radio">
+                                <img src="img/four_carts/13986808188500.png" width="120" height="31" class="imgs" alt="">
+                            </li>
+                            <li style="padding-bottom: 8px;">
+                                <input type="radio" class="radio">
+                                <img src="img/four_carts/13986807547535.png" width="120" height="31" class="imgs" alt="">
+                            </li>
+                            <li style="padding-bottom: 8px;">
+                                <input type="radio" class="radio">
+                                <img src="img/four_carts/13986806681956.png" width="120" height="31" class="imgs" alt="">
+                            </li>
+                            <li style="padding-bottom: 8px;">
+                                <input type="radio" class="radio">
+                                <img src="img/four_carts/13986818538284.png" width="120" height="31" class="imgs" alt="">
+                            </li>
+                            <li style="padding-bottom: 8px;">
+                                <input type="radio" class="radio">
+                                <img src="img/four_carts/13986805447105.png" width="120" height="31" class="imgs" alt="">
+                            </li>
+                            <li style="padding-bottom: 8px;">
+                                <input type="radio" class="radio">
+                                <img src="img/four_carts/14054262997398.jpg" width="120" height="31" class="imgs" alt="">
+                            </li>
+                            <li style="padding-bottom: 8px;">
+                                <input type="radio" class="radio">
+                                <img src="img/four_carts/14054265096883.jpg" width="120" height="31" class="imgs" alt="">
+                            </li>
+                            <li style="padding-bottom: 8px;">
+                                <input type="radio" class="radio">
+                                <img src="img/four_carts/14054265071504.jpg" width="120" height="31" class="imgs" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 余额支付 -->
+                    <span>
+                        <i class="bank_active_title_circle"></i>余额支付 : 使用您的账户余额进行订单全额支付
+                    </span>
+                    <div class="bank_whiteback">
+                        <ul>
+                            <li style="padding-bottom:8px;">
+                                <input type="radio" class="radio">
+                                <img src="img/four_carts/14025652784806.jpg" width="120" height="31" class="imgs" alt="">
+                            </li>
+                            <span>只有余额大于等于本订单金额时，才能选择全额余额支付，如果您的余额不足以支付本订单，请选择在线支付，同时您可以在本页左下角选择使用余额支付部分金额按钮来使用您的账余额。</span>
+                        </ul>
+                    </div>
+                </li>
+                <!-- 银行汇款/转账 -->
+                <li style="clear: both;">
+                    <input type="radio" name="pay_chanel" class="radio" id="payment_way_banktran" value="payment_way_banktran">银行汇款/转帐
+                    <span class="ship_handtohand_hint"></span>
+                    <!-- display:table-cell.默认情况下是隐藏 -->
+                    <ul class="zhuan_bank_wrap" style="display:none">
+                        <li style="padding-bottom: 8px;line-height:22px">
+                            
+                        您可以选择以下银行账户给我们转账，24小时内我们的工作人员将通过您订单中留下的电话同您取得联系，为您确认货款是否到账。
+                    
+                        </li>
+                        <li class="li-bank">
+                            <span class="bank_icon_bg">
+                                招商银行 北京分行万达广场支行；账户名称：瑞美嘉信国际信息技术（北京）有限公司；账号：1109 0686 7210 802
+                            </span>
+                        </li>
+                        <li class="li-bank">
+                            <span class="bank_icon_bg"> 中国银行 中国银行北京长虹桥支行；账户名称：瑞美嘉信国际信息技术（北京）有限公司；账号：3272 5738 7249</span>
+                        </li>
+                        <li class="li-bank">
+                            <span class="bank_icon_bg">交通银行 交通银行北京工体北路支行；账户名称：瑞美嘉信国际信息技术（北京）有限公司；账号：1100 6086 9018 1500 34696</span>
+                        </li>
+                    </ul>
+                </li>
+                <!-- 货到付款 -->
+                <!-- 未选中的是时候class="radio" 选中的时候radio_on -->
+                <li style="clear: both;">
+                    <input type="radio" name="pay_chanel" class="radio" id="payment_way_handtohand" value="payment_way_handtohand">货到付款
+                    <span class="ship_handtohand_hint"></span>
+                </li>
+                <!-- 自取上门 -->
+                <li style="padding-top:10px;overflow:hidden;clear:both">
+                    <input type="button" value="保存支付方式" class="all_btn allred_btn" style="float: left">
+                    <input type="button" value="取消" class="all_btn allgray_btn" style="float: left;margin-left:10px;">
+                    <li style="float: left;clear:both;height:5px">&nbsp;</li>
+                </li>
+                <li style="float: none;clear:both;height:5px">&nbsp;</li>
+            </ul>
+        </div>
+        <!-- 商品清单 -->
+        <div id="cart_item_detail_box">
+            <div class="wap_head">
+                <span class="cart_goods_qd">商品清单</span>
+                <span class="cart_update">
+                    <a href="###">返回修改购物车</a>
+                </span>
+            </div>
+            <div id="cart_item_detail_box_content">
+                <div id="item_list_box" width="1000" class="cart_goods">
+                    <div class="user-cart-box">
+                        <div class="clear-cart">
+                            <div class="cart-left">
+                                <h3>配送方式</h3>
+                                <div class="get-way" id="0_0">
+                                    <ul>
+                                        <li class="check" id="online|0_0|3">
+                                            <span>普通快递</span>
+                                        </li>
+                                        <li id="online|0_0|12">
+                                            <span>专柜自提</span>
+                                            <a href="###">
+                                                <div style="position: absolute;width: 20px;height: 20px;top:5px;left:154px;line-height: 26px;background: url(img/four_carts/147920869865_20x20.png)no-repeat;font-size: 12px;color:#fff;z-index:4;"></div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="youinfo" style="margin-top:26px"></p>
+                                <p class="you" style="margin-top: 22px;display: none;">优惠信息</p>
+                                <p class="youinfo" style="display: none">钻石会员，优惠￥180</p>
+                            </div>
+                            <div class="cart-right">
+                                <h3>此订单由第五大道奢侈品网为您服务</h3>
+                                <div class="cart-goods">
+                                    <table width="100%" class="cart_goods pei-song" cellspacing="0" cellpadding="0">
+                                        <tbody>
+                                            <tr>
+                                                <th width="100"></th>
+                                                <th width="260"></th>
+                                                <th width="60"></th>
+                                                <th width="60"></th>
+                                                <th width="80"></th>
+                                                <th width="60"></th>
+                                            </tr>
+                                            <tr>
+                                                <td class="car-thumb">
+                                                    <a href="####" style="position: relative">
+                                                        <img src="img/four_carts/12980_thumb_G_1304502944420.jpg" width="75" alt="">
+                                                    </a>
+                                                </td>
+                                                <td class="cg-info">
+                                                    <table class="cart_goods" cellspacing="0" cellpadding="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="260">
+                                                                    <a href="###">Ferragamo菲拉格慕 紫红色小牛皮经典细跟高跟鞋</a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td class="cg-color">
+                                                    <span>36,红色系</span>
+                                                </td>
+                                                <td class="cg-num">x1</td>
+                                                <td class="cg-active">
+                                                    <table class="cart_goods" cellspacing="0" cellpadding="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td class="cg-price">￥3,429.00</td>
+                                            </tr>
+                                            <tr width="100%" height="25">
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 运送方式 -->
+                <div id="other_cost_box">
+                    <ul>
+                        <!--  -->
+                        <li>运送的方式：
+                            <select name="" id="ship_type" style="display:none">
+                                <option value="">请选择</option>
+                                <option id="3" value="">普通快递</option>
+                                <option id="11" value="">送货上门</option>
+                                <option id="12" value="">到店自提</option>
+                            </select>
+                            <span class="ship_hint"></span>
+                            <span id="freeship1_box"></span>
+                        </li>
+                        <li id="coupon_list_box">
+                            使用优惠券：
+                            <select name="" id="bonus_list">
+                                <option value="" id="0">不用优惠券</option>
+                                <option value="" id="0">新人注册20</option>
+                                <option value="" id="0">新人注册60</option>
+                                <option value="" id="0">新人注册60</option>
+                            </select>
+                            <span style="cursor: pointer;color:#d00000">兑换优惠劵 >></span>
+                        </li>
+                        <!-- 礼品卡 -->
+                        <li>
+                            <div>
+                                <span class="wap_head-s-new">-</span>使用第五大道礼品卡：
+                                <a href="####" style="cursor: pointer;color: #d00000;">查看可用礼品卡 >></a>
+                            </div>
+                        </li>
+                        <!-- 余额支付 -->
+                        <li id="cart_money_box">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <span class="wap_head-s-new">+</span>余额支付：
+                                        <span id="current_surplus_box">
+                                            您的可用余额为
+                                            <b style="color: #d00000">￥0.00</b>
+                                        </span>
+                                        <span style="cursor: pointer;color:#d00000;display: none">查看可用余额</span>
+                                        <span id="open_set_surplus" style="display: none">xxx,您还没有设置余额支付密码 
+                                            <a href="###" class="cart_hint">设置为>></a>
+                                        </span>
+                                    </div>
+                                    <div id="surplus_box" style="display: none">
+                                        <div id="surplus_input_box">
+                                            <ul>
+                                                <li>
+                                                    <label for="">支付余额：</label>
+                                                    <input type="text" id="surplus_val" class="input">
+                                                </li>
+                                                <li>
+                                                    <label for="">支付密码：</label>
+                                                    <input type="password" id="surplus_pw" class="input">
+                                                    <span class="cart_hint">
+                                                        <a href="###">忘记支付密码 ？>></a>
+                                                    </span>
+                                                </li>
+                                                <li id="recaptcha_box" style="display: none"></li>
+                                                <li class="clearboth">&nbsp;</li>
+                                                <li>
+                                                    <input type="button" value="确定" class="all_btn allred_btn" style="float: left">
+                                                    <input type="button" value="取消" class="all_btn allgray_btn" style="float: left">
+                                                    <span id="surplus_error" style="color: #f00"></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="final_pay_box">
+                    <ul>
+                        <li>
+                            <div class="cartcon_title">商品金额小计：</div>
+                            <div class="cartcon_lose_price">
+                                <b>￥</b>
+                                <span>3429</span>
+                            </div>
+                        </li>
+                        <li>
+                            <!-- <div class="cartcon_title">运费：</div>
+                            <div class="cartcon_lose_pice">
+                                <span id="ship_price">
+                                    +<b>￥</b>0
+                                </span>
+                            </div> -->
+                            <div class="cartcon_title">运费：</div>
+                            <div class="cartcon_lose_price">
+                                <span id="ship_price">+<b>￥</b>0</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cartcon_title cartcon_moneytitle">应付金额：</div>
+                            <div class="cartcon_lose_price cartcon_money">
+                                <b>￥</b>
+                                <span>3,429.00</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clearboth">&nbsp;</div>
+        <div class="cart_supply">
+            <div id="cart_ps">
+                <div class="wap_head-s">
+                    <span>+</span>
+                    订单备注：
+                </div>
+                <div id="cart_ps_content" style="display: none">
+                    <textarea name="" id="cart_ps_content_words"></textarea>
+                </div>
+            </div>
+            <div id="cart_invoice_box">
+                <div class="wap_head-s">
+                    <span>-</span>
+                    开发票：
+                </div>
+                <span class="clearfix" id="cart_invoice_info"> 海外购商品暂不支持发票</span>
+                <div id="cart_invoice_tip_content" style="display: block">
+                    <p class="company"></p>
+                    <p class="flagship"></p>
+                    <p class="overseas">海外购商品暂不支持发票</p>
+                </div>
+            </div>
+        </div>
+        <div id="cart_confirm_btn" class="clearfix">
+            <div class="reason1_return_area" style="display: block">
+                <input type="checkbox" name="reason_return" id="reason_return" checked>&nbsp; 我同意&nbsp;
+                <a href="####" style="color: #363fd2;">《7天无理由退换货规则》</a>
+            </div>
+            <input type="button" value="提交订单" id="confirm_submit" class="all_bigBtn allred_btn">
+            <div class="cartcon_lose_price cartcon_money">
+                <span class="cartcon_moneytitle">应付金额：</span>
+                <b>￥</b>
+                <span id="cart_order_amount">3,429.00</span>
+            </div>
+            <div style="clear: both"></div>
+            <div>
+                <input type="checkbox" name="reason_return" id="reason_return" style="vertical-align: middle" checked>&nbsp; 已阅读并同意 &nbsp;
+                <a href="####">用户购买协议</a>
+            </div>
+        </div>
+        <div class="cart_confirm_btn_downline"></div>
+    </div>
+</body>
+</html>

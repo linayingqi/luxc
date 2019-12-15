@@ -1,0 +1,2556 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>首页---主页面</title>
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="v30_base.css">
+        <link rel="stylesheet" href="index.css">
+        <script src='js/index_hotstore.js'></script>
+    </head>
+    <body>
+       <!--轮播图-->
+       <div id="lunbo">
+        <div id="banner">
+          <div id="btn-left"></div>
+          <ul id="ul-imgs" style="width:6050px; margin-left:0px;" class="transition">
+            <li><a href="javascript:;"><img src="img/banner/156335243898_1920x680.jpg"></a></li>
+            <li><a href="javascript:;"><img src="img/banner/156352632553_1440x520.jpg"></a></li>
+            <li><a href="javascript:;"><img src="img/banner/156413309217_1440x520.jpg"></a></li>
+            <li><a href="javascript:;"><img src="img/banner/156577209928_1440x520.jpg"></a></li>
+            <!--注意！最后li个数要比实际图片张数多1，最后一个li里的img是重复第一张li的图片-->
+            <li><a href="javascript:;"><img src="img/banner/156523228712_1440x520.jpg"></a></li>
+          </ul>
+          <ul id="ul-idxs">
+                <!--虽然li个数比实际图片张数多1，但小圆点的个数不必多1-->
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>                   
+            <div id="btn-right"></div>
+            </div>        
+        </div>
+        <!-- 主页部分 -->
+        <!-- ajax -->   
+        <div class="mainx_main">
+            <div class="brandship_title">
+                <img src="img/index/pinpai/mainx_brandship.png" alt="">
+            </div>
+            <ul class="brandship_list">
+                <li>
+                    <a href="###">
+                        <img src="img/index/pinpai/14661272155086.jpg" class="bgpic loadimg" alt="">
+                        <div class="brandship_tbox">
+                            <!--<div class="brand_hide" style="top: 100px">-->
+                            <div class="brand_hide">
+                                <img src="img/index/pinpai/14477460558710.png" class="loadimg brandlogopic" style="display: block" alt="">
+                                <p class="splitline">
+                                    <span class="blackbar"></span>
+                                </p>
+                                <p class="enbrand">Tiffany & Co.</p>
+                                <p class="chnbrand">蒂芙尼</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <img src="img/index/pinpai/152153321432_236x329.jpg" class="bgpic loadimg" alt="">
+                        <div class="brandship_tbox">
+                            <!--<div class="brand_hide" style="top: 100px">-->
+                            <div class="brand_hide">
+                                <img src="img/index/pinpai/14477416916999.png" class="loadimg brandlogopic" style="display: block" alt="">
+                                <p class="splitline">
+                                    <span class="blackbar"></span>
+                                </p>
+                                <p class="enbrand">Michael Kors/MK</p>
+                                <p class="chnbrand">迈克.柯尔</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <img src="img/index/pinpai/148703779527_234x329.jpg" class="bgpic loadimg" alt="">
+                        <div class="brandship_tbox">
+                            <!--<div class="brand_hide" style="top: 100px">-->
+                            <div class="brand_hide">
+                                <img src="img/index/pinpai/14477401441012.png" class="loadimg brandlogopic" style="display: block" alt="">
+                                <p class="splitline">
+                                    <span class="blackbar"></span>
+                                </p>
+                                <p class="enbrand">Longchamp </p>
+                                <p class="chnbrand">珑骧</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <img src="img/index/pinpai/151661389629_236x329.png" class="bgpic loadimg" alt="">
+                        <div class="brandship_tbox">
+                            <!-- <div class="brand_hide" style="top: 100px"> -->
+                            <div class="brand_hide">
+                                <img src="img/index/pinpai/14477454559904.png" class="loadimg brandlogopic" style="display: block" alt="">
+                                <p class="splitline">
+                                    <span class="blackbar"></span>
+                                </p>
+                                <p class="enbrand">Swarovski </p>
+                                <p class="chnbrand">施华洛世奇</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li style="margin-right:0;">
+                    <a href="###">
+                        <img src="img/index/pinpai/152816644315_236x329.jpg" class="bgpic loadimg" alt="">
+                        <div class="brandship_tbox">
+                            <!-- <div class="brand_hide" style="top: 100px"> -->
+                            <div class="brand_hide">
+                                <img src="img/index/pinpai/14477388141982.png" class="loadimg brandlogopic" style="display: block" alt="">
+                                <p class="splitline">
+                                    <span class="blackbar"></span>
+                                </p>
+                                <p class="enbrand">Juicy Couture</p>
+                                <p class="chnbrand">橘滋</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <!-- 热门旗舰店 -->
+            <div class="hotstore_title">
+                <img src="img/index/01_remen/hotstore_t.jpg" alt="">
+                <div class="hotarrowbtn">
+                    <a href="javascript:;">
+                        <span class="hot_pre"></span>
+                    </a>
+                    <a href="javascript:;">
+                        <span class="hot_next" id='hot_next'></span>
+                    </a>
+                </div>
+            </div>
+            <div class="hotflag">
+                <ul class="hotflagbox" id='hotflagbox'>
+                    <li>
+                        <!-- 1 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477460558710.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">蒂芙尼</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477416916999.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">迈克.柯尔</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477401441012.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">珑骧</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477454559904.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">施华洛世奇</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477388141982.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">橘滋</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 6-->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477468896235.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">维多利亚的秘密</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 7 -->
+                        <div class="hotflagson" style='margin-right: 0'>
+                            <img src="img/index/01_remen/14477432448399.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">雷达</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 8 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477282116284.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">宝玑</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 9 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477432418542.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">普拉达</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 10 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477248162526.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">亚历山大.麦昆</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 11 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477320365133.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">娇兰</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 12 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477312236406.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">雅诗兰黛</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 13 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477414658831.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">MCM</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 14 -->
+                        <div class="hotflagson" style='margin-right: 0'>
+                            <img src="img/index/01_remen/14477454567787.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">泰格豪雅</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                    </li> 
+                    <li>
+                        <!-- 1 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477419321653.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">莫斯奇诺</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477284515625.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">巴宝莉</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14712476653414.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">歌蕾</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/147418184838_214x108.jpg" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">LuckyOzasec</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/147255231014_214x108.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">Refa</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 6-->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477430744531.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">POLICE</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 7 -->
+                        <div class="hotflagson" style='margin-right: 0'>
+                            <img src="img/index/01_remen/14479263905429.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">瑞贝卡·明可弗</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 8 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14524832304110.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">Theonne</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 9 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477318724845.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">古驰</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 10 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477284519867.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">宝格丽</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 11 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477391395609.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">科颜氏</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 12 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477314136401.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">菲拉格慕</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 13 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477258985459.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">阿玛尼</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 14 -->
+                        <div class="hotflagson" style='margin-right: 0'>
+                            <img src="img/index/01_remen/14477391399663.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">海蓝之谜</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 1 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477274206917.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">波比布朗</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/147669863333_214x108.jpg" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">柏品</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477267323870.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">巴利</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477282116284.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">宝玑</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477432452427.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">雷朋</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 6-->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477378676085.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">雨果.波士</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 7 -->
+                        <div class="hotflagson" style='margin-right: 0'>
+                            <img src="img/index/01_remen/14477305449735.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">迪奥</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 8 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477425318150.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">派克</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 9 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477320366584.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">Guess</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 10 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477378676085.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">雨果.波士</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 11 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14477396117694.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">兰蔻</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 12 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14461052905935.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">姬龙雪</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 13 -->
+                        <div class="hotflagson">
+                            <img src="img/index/01_remen/14479263905429.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">瑞贝卡·明可弗</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                        <!-- 14 -->
+                        <div class="hotflagson" style='margin-right: 0'>
+                            <img src="img/index/01_remen/14477298397766.png" alt="">
+                            <div class="hotmiddle">
+                                <a href="###">
+                                    <p class="brandchnname">西铁城</p>
+                                    <div class="blacksline">
+                                        <span></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="topline"></div>
+                            <div class="rightline"></div>
+                            <div class="bottomline"></div>
+                            <div class="leftline"></div>
+                        </div>
+                    </li> 
+                </ul>
+            </div>
+            <!-- 品牌旗舰店结束 -->
+            <!-- 海外服务开始 -->
+            <div class='oversealife_title'>
+                <img src="img/index/02_oversealife/151608917677_1210x112.jpg" alt="">
+            </div>
+            <ul class='oversealife_list'>
+                <li>
+                    <a href="###">
+                        <img class='loadimg' src="img/index/02_oversealife/154025811528_295x393.jpg" alt="">
+                        <i></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <img class='loadimg' src="img/index/02_oversealife/154025811568_295x393.jpg" alt="">
+                        <i></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <img class='loadimg' src="img/index/02_oversealife/154025811691_295x393.jpg" alt="">
+                        <i></i>
+                    </a>
+                </li>
+                <li style='margin-right: 0'>
+                    <a href="###">
+                        <img class='loadimg' src="img/index/02_oversealife/154025811675_295x393.jpg" alt="">
+                        <i></i>
+                    </a>
+                </li>
+            </ul>
+            <!-- 海外服务结束 -->
+            <!-- 商场同款开始 -->
+            <div class='storesame_title'>
+                <img src="img/index/03_storesame/storesametitle.jpg" alt="">
+            </div>
+            <ul class='storesame_link'>
+                <li class='active'>热卖品牌</li>
+                <li>新品推荐</li>
+                <li style='margin-right: 0px;'>生活方式</li>
+            </ul>
+            <div class='storesame'>
+                <ul class='storesame_box'>
+                    <!-- 1 热卖品牌-->
+                    <li>
+                        <div class='storesameb_left'>
+                            <a href="####">
+                                <img src="img/index/03_storesame/155981467446_369x518.jpg" width='368' alt="">
+                            </a>
+                        </div>
+                        <div class='storesameb_right'>
+                            <div class='storesameb_top'>
+                                <!-- top1 -->
+                                <div class='storesame_top1' style='margin-right: 8px'>
+                                    <div class='storesametoptxt'>
+                                        <p class='enbrand'>Chiara Ferragni</p>
+                                        <p>琪亚拉·法拉格尼</p>
+                                        <p>￥ 1540</p>
+                                    </div>
+                                    <div class='storesametoppic'>
+                                        <a href='####'>
+                                            <img src='img/index/03_storesame/156125089580_1200x1800_800x800.jpg' width='150'/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- top2 -->
+                                <div class='storesame_top2'>
+                                    <div class='storesametoptxt'>
+                                        <p class='enbrand'>TOPSHOP</p>
+                                        <p></p>
+                                        <p>￥ 448</p>
+                                    </div>
+                                    <div class='storesametoppic storesametoppic2'>
+                                        <a href='###'>
+                                            <img src='img/index/03_storesame/156132461466_1571x2000.jpg' width='180'>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 3 -->
+                                <div class='storesame_top1'>
+                                    <div class='storesametoptxt'>
+                                        <p class='enbrand'>Maison Margiela</p>
+                                        <p></p>
+                                        <p>￥ 1849</p>
+                                    </div>
+                                    <div class='storesametoppic'>
+                                        <a href='####'>
+                                            <img src='img/index/03_storesame/156098585757_385x580_800x800.jpg' width='150'/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='storesameb_bottom'>
+                                <!-- 1 -->
+                                <div class='storesamebottom1'>
+                                    <div class='storesametoptxt'>
+                                        <p class='enbrand'>Prada</p>
+                                        <p>普拉达</p>
+                                        <p>￥ 7441</p>
+                                    </div>
+                                    <div class='storesametoppic'>
+                                        <a href='##'>
+                                            <img src='img/index/03_storesame/155779966466_2594x3464_800x800.jpg' width='150'/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 2 -->
+                                <div class='storesamebottom1'>
+                                    <div class='storesametoptxt'>
+                                        <p class='enbrand'>Carolina Santo Domingo</p>
+                                        <p></p>
+                                        <p>￥ 4428</p>
+                                    </div>
+                                    <div class='storesametoppic'>
+                                        <a href="##">
+                                            <img src='img/index/03_storesame/156038098736_385x580_800x800.jpg' width='150'/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 3 -->
+                                <div class='storesamebottom1' style='margin-right: 0'>
+                                    <div class='storesametoptxt'>
+                                        <p class='enbrand'>Manolo Blahnik</p>
+                                        <p>莫罗.伯拉尼克</p>
+                                        <p>￥ 7200</p>
+                                    </div>
+                                    <div class='storesametoppic'>
+                                        <a href="##">
+                                            <img src='img/index/03_storesame/155994923041_385x580_800x800.jpg' width='150'/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 新品推荐 -->
+                    <li>
+                        <div class='storesameb_left'>
+                            <a href="####">
+                                <img src="img/index/03_storesame/155981467658_366x515.jpg" width='368' alt="">
+                            </a>
+                        </div>
+                        <div class='storesameb_right'>
+                            <div class='storesameb_top'>
+                                <!-- top1 -->
+                                <div class='storesame_top1' style='margin-right: 8px'>
+                                    <div class='storesametoptxt'>
+                                        <p class='enbrand'>Yuzefi</p>
+                                        <p></p>
+                                        <p>￥ 5352</p>
+                                    </div>
+                                    <div class='storesametoppic'>
+                                        <a href='####'>
+                                            <img src='img/index/03_storesame/156115843863_385x580_800x800.jpg' width='150'/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- top2 -->
+                                <div class='storesame_top2'>
+                                    <div class='storesametoptxt'>
+                                        <p class='enbrand'>OFF-WHITE</p>
+                                        <p></p>
+                                        <p>￥ 1695</p>
+                                    </div>
+                                    <div class='storesametoppic storesametoppic2'>
+                                        <a href='###'>
+                                            <img src='img/index/03_storesame/156098568292_385x580_800x800.jpg' width='180'>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 3 -->
+                                <div class='storesame_top1'>
+                                    <div class='storesametoptxt'>
+                                        <p class='enbrand'>Givenchy </p>
+                                        <p>纪梵希</p>
+                                        <p>￥ 19943</p>
+                                    </div>
+                                    <div class='storesametoppic'>
+                                        <a href='####'>
+                                            <img src='img/index/03_storesame/156098619333_385x580_800x800.jpg' width='150'/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='storesameb_bottom'>
+                                <!-- 1 -->
+                                <div class='storesamebottom1'>
+                                    <div class='storesametoptxt'>
+                                        <p class='enbrand'>Burberry</p>
+                                        <p>巴宝莉</p>
+                                        <p>￥ 7624</p>
+                                    </div>
+                                    <div class='storesametoppic'>
+                                        <a href='##'>
+                                            <img src='img/index/03_storesame/156038102469_385x580_800x800.jpg' width='150'/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 2 -->
+                                <div class='storesamebottom1'>
+                                    <div class='storesametoptxt'>
+                                        <p class='enbrand'>Malone Souliers</p>
+                                        <p></p>
+                                        <p>￥ 4582</p>
+                                    </div>
+                                    <div class='storesametoppic'>
+                                        <a href="##">
+                                            <img src='img/index/03_storesame/155994913483_385x580_800x800.jpg' width='150'/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 3 -->
+                                <div class='storesamebottom1' style='margin-right: 0'>
+                                    <div class='storesametoptxt'>
+                                        <p class='enbrand'>RE/DONE</p>
+                                        <p></p>
+                                        <p>￥ 1271</p>
+                                    </div>
+                                    <div class='storesametoppic'>
+                                        <a href="##">
+                                            <img src='img/index/03_storesame/156029428418_385x580_800x800.jpg' width='150'/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 生活方式 -->
+                    <li>
+                        <!-- 1 -->
+                        <div class='darwin_3colum'>
+                            <div class='darwin_3colum_one  imgCol1Hover'>
+                                <dl>
+                                    <dd>
+                                        <a href='###'>
+                                            <img src='img/index/03_storesame/153993056768_398x517.jpg'/>
+                                        </a>
+                                    </dd>
+                                    <dt class="imageCover">
+                                        <a href='http:www/sitln'>
+                                            <ul>
+                                                <li>明星生活款</li>
+                                                <li>PUMEI朴寐</li>
+                                                <li>
+                                                    <b></b>
+                                                </li>
+                                                <li>
+                                                    <span class='fsize14'>PUMEI针织棉四件套</span>
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </dt>
+                                </dl>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class='darwin_3colum' style='margin-left:5px;'>
+                            <div class="darwin_3colum_two imgCol1Hover">
+                                <dl>
+                                    <dd>
+                                        <a href="###">
+                                            <img src='img/index/03_storesame/153993056643_398x255.jpg'>
+                                        </a>
+                                    </dd>
+                                    <dt class='imageCover'>
+                                        <a>
+                                            <ul>
+                                                <li>生活方式</li>
+                                                <li>KeepCup</li>
+                                                <li>
+                                                    <b></b>
+                                                </li>
+                                                <li>
+                                                    <span class='fsize14'>环保拼色木环单双层玻璃水杯</span>
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </dt>
+                                </dl>
+                            </div>
+                            <div class="darwin_3colum_two imgCol1Hover">
+                                <dl>
+                                    <dd>
+                                        <a href="###">
+                                            <img src='img/index/03_storesame/153993056524_398x255.jpg'>
+                                        </a>
+                                    </dd>
+                                    <dt class='imageCover'>
+                                        <a>
+                                            <ul>
+                                                <li>生活方式</li>
+                                                <li>GELEISTORY 歌蕾</li>
+                                                <li>
+                                                    <b></b>
+                                                </li>
+                                                <li>
+                                                    <span class='fsize14'>艺术相框画永生花在美的光彩中</span>
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </dt>
+                                </dl>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class='darwin_3colum' style='margin-left: 5px'>
+                            <div class="darwin_3colum_two imgCol1Hover">
+                                <dl>
+                                    <dd>
+                                        <a href="###">
+                                            <img src='img/index/03_storesame/153993056461_398x255.jpg'>
+                                        </a>
+                                    </dd>
+                                    <dt class='imageCover'>
+                                        <a>
+                                            <ul>
+                                                <li>生活方式</li>
+                                                <li>Aesop</li>
+                                                <li>
+                                                    <b></b>
+                                                </li>
+                                                <li>
+                                                    <span class='fsize14'>Roll-On Deodorant</span>
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </dt>
+                                </dl>
+                            </div>
+                            <div class="darwin_3colum_two imgCol1Hover">
+                                <dl>
+                                    <dd>
+                                        <a href="###">
+                                            <img src='img/index/03_storesame/153993056362_398x255.jpg'>
+                                        </a>
+                                    </dd>
+                                    <dt class='imageCover'>
+                                        <a>
+                                            <ul>
+                                                <li>生活方式</li>
+                                                <li>Eva Solo</li>
+                                                <li>
+                                                    <b></b>
+                                                </li>
+                                                <li>
+                                                    <span class='fsize14'>天使保温壶</span>
+                                                </li>
+                                            </ul>
+                                        </a>
+                                    </dt>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 商场同款结束 -->
+            <!-- 购物中心开始-->
+            <div>
+                <img src='img/index/04shopping/01shoppcenter/shopcenter.jpg'>
+            </div>
+            <ul class='shopcenter'>
+                <!-- 1 -->
+                <li>
+                    <div class='shopcenterbox'> 
+                        <a href="javascript:;" class="quicktab" anchor="classic_bags">
+                            <div class="topbox">经典箱包</div>
+                        </a>
+                        <!-- <a href="javascript:;" class="quicktab" anchor="classic_bags"> -->
+                        <a href="#classic_bags" class="quicktab" anchor="classic_bags">
+                            <div class="bottombox">
+                                <div class="border">
+                                    <p class="en">Classic bags</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <!-- 2 -->
+                <li>
+                    <div class='shopcenterbox'>
+                        <a href="javascript:;" class="quicktab" anchor="collection_watches">
+                            <div class="topbox">经典腕表</div>
+                        </a>
+                        <!-- <a href="javascript:;" class="quicktab" anchor="classic_bags"> -->
+                        <a href="#collection_watches" class="quicktab" anchor="collection_watches">
+                            <div class="bottombox">
+                                <div class="border">
+                                    <p class="en">Collection watches</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <!-- 3 -->
+                <li>
+                    <div class='shopcenterbox'>
+                        <a href="javascript:;" class="quicktab" anchor="exquisite_accessories">
+                            <div class="topbox">精致配饰</div>
+                        </a>
+                        <!-- <a href="javascript:;" class="quicktab" anchor="exquisite_accessories"> -->
+                        <a href="#exquisite_accessories" class="quicktab" anchor="exquisite_accessories">
+                            <div class="bottombox">
+                                <div class="border">
+                                    <p class="en">Exquisite accessories</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <!-- 4 -->
+                <li>
+                    <div class='shopcenterbox'>
+                        <a href="javascript:;" class="quicktab" anchor="nurse_makeup">
+                            <div class="topbox">个护化妆</div>
+                        </a>
+                        <!-- <a href="javascript:;" class="quicktab" anchor="nurse_makeup"></a> -->
+                        <a href="#nurse_makeup" class="quicktab" anchor="nurse_makeup">
+                            <div class="bottombox">
+                                <div class="border">
+                                    <p class="en">Nurse makeup</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <!-- 5 -->
+                <li>
+                    <div class='shopcenterbox'>
+                        <a href="javascript:;" class="quicktab" anchor="fashion_apparel">
+                            <div class="topbox">时尚鞋服</div>
+                        </a>
+                        <!-- <a href="javascript:;" class="quicktab" anchor="fashion_apparel"></a> -->
+                        <a href="#fashion_apparel" class="quicktab" anchor="fashion_apparel">
+                            <div class="bottombox">
+                                <div class="border">
+                                    <p class="en">Shoes and apparel</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <!-- 购物中心结束 -->
+            <!-- 经典包款开始 -->
+            <a name="classic_bags" id="classic_bags"></a>
+            <div class="goodstitle">
+                <img src="img/index/04shopping/01shoppcenter/01classic_bags/goodtitle1.jpg" class="txt">
+                <div class="rightbtn">
+                    <a href="####">
+                        <span class="icon"></span>
+                        <span class="moretxt">SHOW MORE</span>
+                    </a>
+                </div>
+            </div>
+            <div class="goods">
+                <div class="goods1">
+                    <ul class="goodslinks">
+                        <li><a href="####">单肩包</a></li>
+                        <li><a href="####">手提包</a></li>
+                        <li><a href="####">手提斜挎包</a></li>
+                        <li><a href="####">双肩包</a></li>
+                        <li><a href="####">手拿包</a></li>
+                        <li><a href="####">钱包</a></li>
+                        <li><a href="####">小皮件</a></li>
+                        <li><a href="####">旅行箱/包</a></li>
+                        <li><a href="####">学挎包</a></li>
+                        <li><a href="####">化妆箱/包</a></li>
+                    </ul>
+                    <div class="slider">
+                        <div class="bx-wrapper" style="max-width: 100%">
+                            <div class="bx-viewport" style="width: 100%;position:relative;overflow:hidden;height:114px">
+                                <ul class="sliderbox bxslider" style="width: 515%;position:relative;transition-duration:0s;transform:translate3d(-224px,0px,0px)">
+                                    <!-- 1 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!--1--> 
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/14477416914159.png" width="107" height="54">
+                                        </a>
+                                        <!---2-->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/153914012453_214x108.png" width="107" height="54">
+                                        </a>  
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/14477290292344.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/151330937570_214x108.jpg" width="107" height="54">
+                                        </a>
+                                    </li>
+                                    <!-- 2 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!-- 1 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/14477406185992.png" width="107" height="54">
+                                        </a>
+                                        <!-- 2 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/149482910148_214x108.jpg" width="107" height="54">
+                                        </a>
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/14477378665957.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/14477318724845.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                    <!-- 3 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!-- 1 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/14477284515625.png" width="107" height="54">
+                                        </a>
+                                        <!-- 2 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/14477302268582.png" width="107" height="54">
+                                        </a>
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/14477416916999.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/14477432418542.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                    <!-- 4 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!-- 1 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/14477416914159.png" width="107" height="54">
+                                        </a>
+                                        <!-- 2 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/153914012453_214x108.png" width="107" height="54">
+                                        </a>
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/14477290292344.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/151330937570_214x108.jpg" width="107" height="54">
+                                        </a>
+                                    </li>
+                                    <!-- 5 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!-- 1 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/14477406185992.png" width="107" height="54">
+                                        </a>
+                                        <!-- 2 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/153914012453_214x108.png" width="107" height="54">
+                                        </a>
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/14477378665957.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/14477318724845.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bx-controls bx-has-pager bx-has-controls-direction">
+                                <div class="bx-pager bx-default-pager">
+                                    <div class="bx-pager-item">
+                                        <a href="###" data-slide-index='0' class="bx-pager-link active">1</a>
+                                    </div>
+                                    <div class="bx-pager-item">
+                                        <a href="###" data-slide-index='1' class="bx-pager-link">2</a>
+                                    </div>
+                                    <div class="bx-pager-item">
+                                        <a href="###" data-slide-index='2' class="bx-pager-link">3</a>
+                                    </div>
+                                </div>
+                                <div class="bx-controls-direction">
+                                    <a class="bx-prev" href>Prev</a>
+                                    <a class="bx-next" href>Next</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods2">
+                    <!-- <div class="bx-wrapper" style="max-width:100%;margin:0px auto"> -->
+                    <div class="bx-wrapper">
+                        <!-- <div class="bx-viewport" style="width:100%;overflow:hidden;position:relative;height:370px"> -->
+                        <div class="bx-viewport">
+                            <!-- <ul class="goods2slider bxslider" style="width:315px;position:relative;transition-duration: 0s;transform:translate3d(-390px,0px,0px)"> -->
+                            <ul class="goods2slider bxslider">
+                               <!----
+                                <li style="float:left;list-style:none;position:relative;width:390px;" class="bx-clone">
+                                    <a href="###">
+                                        <img src="img/index/04shopping/01shoppcenter/01classic_bags/good_load.gif" alt="" class="loadimg" data-original="" height="370">
+                                    </a>
+                                    <div class="_slider_bord">
+                                        <dl>
+                                            <dd>Coach蔻驰</dd>
+                                            <dd>
+                                                <b></b>
+                                            </dd>
+                                            <dd>经典轻奢</dd>
+                                            <dt>简洁百搭</dt>
+                                        </dl>
+                                    </div>
+                                </li>--->
+                                <!-- <li style="float:left;list-style:none;position:relative;width:390px;" class="bx-clone"> -->
+                                <li>
+                                    <a href="###">
+                                        <img src="img/index/04shopping/01shoppcenter/01classic_bags/153561663776_390x370.jpg" style="display:block" alt="" class="loadimg" data-original="" height="370">
+                                    </a>
+                                    <div class="_slider_bord">
+                                        <dl>
+                                            <dd>Coach蔻驰</dd>
+                                            <dd>
+                                                <b></b>
+                                            </dd>
+                                            <dd>经典轻奢</dd>
+                                            <dt>简洁百搭</dt>
+                                        </dl>
+                                    </div>
+                                </li>
+                                 <!----
+                                <li style="float:left;list-style:none;position:relative;width:390px;" class="bx-clone">
+                                    <a href="###">
+                                        <img src="img/index/04shopping/01shoppcenter/01classic_bags/good_load.gif" style="display:block" alt="" class="loadimg" data-original="" height="370">
+                                    </a>
+                                    <div class="_slider_bord">
+                                        <dl>
+                                            <dd>Coach蔻驰</dd>
+                                            <dd>
+                                                <b></b>
+                                            </dd>
+                                            <dd>经典轻奢</dd>
+                                            <dt>简洁百搭</dt>
+                                        </dl>
+                                    </div>
+                                </li>-->
+                            </ul>
+                        </div>
+                        <div class="bx-controls bx-has-controls-direction">
+                            <div class="bx-controls-direction">
+                                <a class="bx-prev disabled" style="left:-30px" href>Prev</a>
+                                <a class="bx-next disabled" style="left:-30px" href>Next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods3">
+                    <div class="goods3pic1">
+                        <a href="####">
+                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/156265449324_275x180.jpg" class="loadimg" data-orignal="" style="display:inline" width="275">
+                        </a>
+                    </div>
+                    <div class="goods3pic2">
+                        <a href="####">
+                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/156265449376_275x180.jpg" class="loadimg" data-orignal="" style="display:inline" width="275">
+                        </a>
+                    </div>
+                    <div class="goods3pic1">
+                        <a href="####">
+                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/156265449337_275x180.jpg" class="loadimg" data-orignal="" style="display:inline" width="275">
+                        </a>
+                    </div>
+                    <div class="goods3pic2">
+                        <a href="####">
+                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/156265449455_275x180.jpg" class="loadimg" data-orignal="" style="display:inline" width="275">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 经典包款结束 -->
+            <!-- 典藏腕表开始 -->
+            <a name="collection_watches" id="collection_watches"></a>
+            <div class="goodstitle">
+                <img src="img/index/04shopping/01shoppcenter/02collection_watches/goodtitle2.jpg" class="txt">
+                <div class="rightbtn">
+                    <a href="####">
+                        <span class="icon"></span>
+                        <span class="moretxt">SHOW MORE</span>
+                    </a>
+                </div>
+            </div>
+            <div class="goods">
+                <div class="goods1">
+                    <ul class="goodslinks">
+                        <li><a href="####">时尚</a></li>
+                        <li><a href="####">瑞表</a></li>
+                        <li><a href="####">德国</a></li>
+                        <li><a href="####">限量版</a></li>
+                        <li><a href="####">法国</a></li>
+                        <li><a href="####">机械表</a></li>
+                        <li><a href="####">石英表</a></li>
+                        <li><a href="####">三针</a></li>
+                        <li><a href="####">计时码表</a></li>
+                        <li><a href="####">瑞士</a></li>
+                    </ul>
+                    <div class="slider">
+                        <div class="bx-wrapper" style="max-width: 100%">
+                            <div class="bx-viewport" style="width: 100%;position:relative;overflow:hidden;height:114px">
+                                <ul class="sliderbox bxslider" style="width: 515%;position:relative;transition-duration:0s;transform:translate3d(-224px,0px,0px)">
+                                    <!-- 1 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!--1--> 
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/02collection_watches/14477284515625.png" width="107" height="54">
+                                        </a>
+                                        <!---2-->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/02collection_watches/14477294515385.png" width="107" height="54">
+                                        </a>  
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/02collection_watches/14477287608582.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/02collection_watches/14477320366584.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                    <!-- 2 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!-- 1 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/02collection_watches/14477258985459.png" width="107" height="54">
+                                        </a>
+                                        <!-- 2 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/02collection_watches/14477460557662.png" width="107" height="54">
+                                        </a>
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/02collection_watches/153914012860_214x108.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/02collection_watches/153908669189_214x108.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                    <!-- 3 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!-- 1 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/02collection_watches/153914012528_214x108.png" width="107" height="54">
+                                        </a>
+                                        <!-- 2 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/02collection_watches/151332925233_214x108.jpg" width="107" height="54">
+                                        </a>
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/02collection_watches/153908207664_214x108.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/02collection_watches/14477389709986.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                    <!-- 4 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!-- 1 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/02collection_watches/14477284515625.png" width="107" height="54">
+                                        </a>
+                                        <!-- 2 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/02collection_watches/14477294515385.png" width="107" height="54">
+                                        </a>
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/02collection_watches/14477294515385.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/02collection_watches/14477294515385.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                    <!-- 5 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!-- 1 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/14477406185992.png" width="107" height="54">
+                                        </a>
+                                        <!-- 2 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/153914012453_214x108.png" width="107" height="54">
+                                        </a>
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/14477378665957.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/01classic_bags/14477318724845.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bx-controls bx-has-pager bx-has-controls-direction">
+                                <div class="bx-pager bx-default-pager">
+                                    <div class="bx-pager-item">
+                                        <a href="###" data-slide-index='0' class="bx-pager-link active">1</a>
+                                    </div>
+                                    <div class="bx-pager-item">
+                                        <a href="###" data-slide-index='1' class="bx-pager-link">2</a>
+                                    </div>
+                                    <div class="bx-pager-item">
+                                        <a href="###" data-slide-index='2' class="bx-pager-link">3</a>
+                                    </div>
+                                </div>
+                                <div class="bx-controls-direction">
+                                    <a class="bx-prev" href>Prev</a>
+                                    <a class="bx-next" href>Next</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods2">
+                    <!-- <div class="bx-wrapper" style="max-width:100%;margin:0px auto"> -->
+                    <div class="bx-wrapper">
+                        <!-- <div class="bx-viewport" style="width:100%;overflow:hidden;position:relative;height:370px"> -->
+                        <div class="bx-viewport">
+                            <!-- <ul class="goods2slider bxslider" style="width:315px;position:relative;transition-duration: 0s;transform:translate3d(-390px,0px,0px)"> -->
+                            <ul class="goods2slider bxslider">
+                               <!----
+                                <li style="float:left;list-style:none;position:relative;width:390px;" class="bx-clone">
+                                    <a href="###">
+                                        <img src="img/index/04shopping/01shoppcenter/01classic_bags/good_load.gif" alt="" class="loadimg" data-original="" height="370">
+                                    </a>
+                                    <div class="_slider_bord">
+                                        <dl>
+                                            <dd>Coach蔻驰</dd>
+                                            <dd>
+                                                <b></b>
+                                            </dd>
+                                            <dd>经典轻奢</dd>
+                                            <dt>简洁百搭</dt>
+                                        </dl>
+                                    </div>
+                                </li>--->
+                                <!-- <li style="float:left;list-style:none;position:relative;width:390px;" class="bx-clone"> -->
+                                <li>
+                                    <a href="###">
+                                        <img src="img/index/04shopping/01shoppcenter/02collection_watches/153743005243_390x370.jpg" style="display:block" alt="" class="loadimg" data-original="" height="370">
+                                    </a>
+                                    <div class="_slider_bord">
+                                        <dl>
+                                            <dd>Audemars Piguet</dd>
+                                            <dd>
+                                                <b></b>
+                                            </dd>
+                                            <dd>世界十大名表之一</dd>
+                                            <dt>精湛技术和典雅设计结合</dt>
+                                        </dl>
+                                    </div>
+                                </li>
+                                 <!----
+                                <li style="float:left;list-style:none;position:relative;width:390px;" class="bx-clone">
+                                    <a href="###">
+                                        <img src="img/index/04shopping/01shoppcenter/01classic_bags/good_load.gif" style="display:block" alt="" class="loadimg" data-original="" height="370">
+                                    </a>
+                                    <div class="_slider_bord">
+                                        <dl>
+                                            <dd>Coach蔻驰</dd>
+                                            <dd>
+                                                <b></b>
+                                            </dd>
+                                            <dd>经典轻奢</dd>
+                                            <dt>简洁百搭</dt>
+                                        </dl>
+                                    </div>
+                                </li>-->
+                            </ul>
+                        </div>
+                        <div class="bx-controls bx-has-controls-direction">
+                            <div class="bx-controls-direction">
+                                <a class="bx-prev disabled" style="left:-30px" href>Prev</a>
+                                <a class="bx-next disabled" style="left:-30px" href>Next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods3">
+                    <div class="goods3pic1">
+                        <a href="####">
+                            <img src="img/index/04shopping/01shoppcenter/02collection_watches/155410154628_275x180.jpg" class="loadimg" data-orignal="" style="display:inline" width="275">
+                        </a>
+                    </div>
+                    <div class="goods3pic2">
+                        <a href="####">
+                            <img src="img/index/04shopping/01shoppcenter/02collection_watches/155235926474_275x180.jpg" class="loadimg" data-orignal="" style="display:inline" width="275">
+                        </a>
+                    </div>
+                    <div class="goods3pic1">
+                        <a href="####">
+                            <img src="img/index/04shopping/01shoppcenter/02collection_watches/155295962879_275x180.jpg" class="loadimg" data-orignal="" style="display:inline" width="275">
+                        </a>
+                    </div>
+                    <div class="goods3pic2">
+                        <a href="####">
+                            <img src="img/index/04shopping/01shoppcenter/02collection_watches/155235926584_275x180.jpg" class="loadimg" data-orignal="" style="display:inline" width="275">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 典藏腕表结束 -->
+            <!-- 精致配饰开始 -->
+            <a name="exquisite_accessories" id="exquisite_accessories"></a>
+            <div class="goodstitle">
+                <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/goodtitle6.jpg" class="txt">
+                <div class="rightbtn">
+                    <a href="####">
+                        <span class="icon"></span>
+                        <span class="moretxt">SHOW MORE</span>
+                    </a>
+                </div>
+            </div>
+            <div class="goods">
+                <div class="goods1">
+                    <ul class="goodslinks">
+                        <li><a href="####">首饰</a></li>
+                        <li><a href="####">腰带</a></li>
+                        <li><a href="####">领带/领结/领带夹</a></li>
+                        <li><a href="####">围巾/丝巾</a></li>
+                        <li><a href="####">帽子</a></li>
+                        <li><a href="####">手套</a></li>
+                        <li><a href="####">伞</a></li>
+                        <li><a href="####">挂饰</a></li>
+                        <li><a href="####">手杖</a></li>
+                        <li><a href="####">眼镜/镜架</a></li>
+                    </ul>
+                    <div class="slider">
+                        <div class="bx-wrapper" style="max-width: 100%">
+                            <div class="bx-viewport" style="width: 100%;position:relative;overflow:hidden;height:114px">
+                                <ul class="sliderbox bxslider" style="width: 515%;position:relative;transition-duration:0s;transform:translate3d(-224px,0px,0px)">
+                                    <!-- 1 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!--1--> 
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/14477430742198.png" width="107" height="54">
+                                        </a>
+                                        <!---2-->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/14477432452427.png" width="107" height="54">
+                                        </a>  
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/14477315605971.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/153908677236_214x108.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                    <!-- 2 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!-- 1 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/14477454559904.png" width="107" height="54">
+                                        </a>
+                                        <!-- 2 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/153908402411_214x108.png" width="107" height="54">
+                                        </a>
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/14477284515625.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/14477318724845.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                    <!-- 3 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!-- 1 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/14477460558710.png" width="107" height="54">
+                                        </a>
+                                        <!-- 2 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/14477248162526.png" width="107" height="54">
+                                        </a>
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/149482910148_214x108.jpg" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/14477468884790.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                    <!-- 4 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!-- 1 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/14477430742198.png" width="107" height="54">
+                                        </a>
+                                        <!-- 2 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/14477432452427.png" width="107" height="54">
+                                        </a>
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/14477315605971.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/153908677236_214x108.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                    <!-- 5 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!-- 1 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/14477454559904.png" width="107" height="54">
+                                        </a>
+                                        <!-- 2 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/153908402411_214x108.png" width="107" height="54">
+                                        </a>
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/14477284515625.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/14477318724845.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bx-controls bx-has-pager bx-has-controls-direction">
+                                <div class="bx-pager bx-default-pager">
+                                    <div class="bx-pager-item">
+                                        <a href="###" data-slide-index='0' class="bx-pager-link active">1</a>
+                                    </div>
+                                    <div class="bx-pager-item">
+                                        <a href="###" data-slide-index='1' class="bx-pager-link">2</a>
+                                    </div>
+                                    <div class="bx-pager-item">
+                                        <a href="###" data-slide-index='2' class="bx-pager-link">3</a>
+                                    </div>
+                                </div>
+                                <div class="bx-controls-direction">
+                                    <a class="bx-prev" href>Prev</a>
+                                    <a class="bx-next" href>Next</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods2">
+                    <!-- <div class="bx-wrapper" style="max-width:100%;margin:0px auto"> -->
+                    <div class="bx-wrapper">
+                        <!-- <div class="bx-viewport" style="width:100%;overflow:hidden;position:relative;height:370px"> -->
+                        <div class="bx-viewport">
+                            <!-- <ul class="goods2slider bxslider" style="width:315px;position:relative;transition-duration: 0s;transform:translate3d(-390px,0px,0px)"> -->
+                            <ul class="goods2slider bxslider">
+                               <!----
+                                <li style="float:left;list-style:none;position:relative;width:390px;" class="bx-clone">
+                                    <a href="###">
+                                        <img src="img/index/04shopping/01shoppcenter/01classic_bags/good_load.gif" alt="" class="loadimg" data-original="" height="370">
+                                    </a>
+                                    <div class="_slider_bord">
+                                        <dl>
+                                            <dd>Coach蔻驰</dd>
+                                            <dd>
+                                                <b></b>
+                                            </dd>
+                                            <dd>经典轻奢</dd>
+                                            <dt>简洁百搭</dt>
+                                        </dl>
+                                    </div>
+                                </li>--->
+                                <!-- <li style="float:left;list-style:none;position:relative;width:390px;" class="bx-clone"> -->
+                                <li>
+                                    <a href="###">
+                                        <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/153440738185_390x370.jpg" style="display:block" alt="" class="loadimg" data-original="" height="370">
+                                    </a>
+                                    <div class="_slider_bord">
+                                        <dl>
+                                            <dd>Chaumet尚美巴黎</dd>
+                                            <dd>
+                                                <b></b>
+                                            </dd>
+                                            <dd>结，让缘分可见</dd>
+                                            <dt>让配饰表达爱意</dt>
+                                        </dl>
+                                    </div>
+                                </li>
+                                 <!----
+                                <li style="float:left;list-style:none;position:relative;width:390px;" class="bx-clone">
+                                    <a href="###">
+                                        <img src="img/index/04shopping/01shoppcenter/01classic_bags/good_load.gif" style="display:block" alt="" class="loadimg" data-original="" height="370">
+                                    </a>
+                                    <div class="_slider_bord">
+                                        <dl>
+                                            <dd>Coach蔻驰</dd>
+                                            <dd>
+                                                <b></b>
+                                            </dd>
+                                            <dd>经典轻奢</dd>
+                                            <dt>简洁百搭</dt>
+                                        </dl>
+                                    </div>
+                                </li>-->
+                            </ul>
+                        </div>
+                        <div class="bx-controls bx-has-controls-direction">
+                            <div class="bx-controls-direction">
+                                <a class="bx-prev disabled" style="left:-30px" href>Prev</a>
+                                <a class="bx-next disabled" style="left:-30px" href>Next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods3">
+                    <div class="goods3pic1">
+                        <a href="####">
+                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/156265449281_275x180.jpg" class="loadimg" data-orignal="" style="display:inline" width="275">
+                        </a>
+                    </div>
+                    <div class="goods3pic2">
+                        <a href="####">
+                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/156265449253_275x180.jpg" class="loadimg" data-orignal="" style="display:inline" width="275">
+                        </a>
+                    </div>
+                    <div class="goods3pic1">
+                        <a href="####">
+                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/156265449320_275x180.jpg" class="loadimg" data-orignal="" style="display:inline" width="275">
+                        </a>
+                    </div>
+                    <div class="goods3pic2">
+                        <a href="####">
+                            <img src="img/index/04shopping/01shoppcenter/03exquisite_accessories/156265449338_275x180.jpg" class="loadimg" data-orignal="" style="display:inline" width="275">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 精致配饰结束 -->
+            <!-- 个护化妆开始 -->
+            <a name="nurse_makeup" id="nurse_makeup"></a>
+            <div class="goodstitle">
+                <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/goodtitle4.jpg" class="txt">
+                <div class="rightbtn">
+                    <a href="####">
+                        <span class="icon"></span>
+                        <span class="moretxt">SHOW MORE</span>
+                    </a>
+                </div>
+            </div>
+            <div class="goods">
+                <div class="goods1">
+                    <ul class="goodslinks">
+                        <li><a href="####">护肤</a></li>
+                        <li><a href="####">彩妆</a></li>
+                        <li><a href="####">香水</a></li>
+                        <li><a href="####">美体</a></li>
+                        <li><a href="####">套装精品</a></li>
+                        <li><a href="####">旅行套装</a></li>
+                        <li><a href="####">美妆工具</a></li>
+                        <li><a href="####">全身护理</a></li>
+                        <li><a href="####">神奇面霜</a></li>
+                        <li><a href="####">古龙水</a></li>
+                    </ul>
+                    <div class="slider">
+                        <div class="bx-wrapper" style="max-width: 100%">
+                            <div class="bx-viewport" style="width: 100%;position:relative;overflow:hidden;height:114px">
+                                <ul class="sliderbox bxslider" style="width: 515%;position:relative;transition-duration:0s;transform:translate3d(-224px,0px,0px)">
+                                    <!-- 1 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!--1--> 
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/14477302246498.png" width="107" height="54">
+                                        </a>
+                                        <!---2-->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/14477452673974.png" width="107" height="54">
+                                        </a>  
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/14477272296808.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/14477391399663.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                    <!-- 2 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!-- 1 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/14477298392255.png" width="107" height="54">
+                                        </a>
+                                        <!-- 2 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/14477305449735.png" width="107" height="54">
+                                        </a>
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/14477312236406.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/14477320365133.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                    <!-- 3 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!-- 1 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/14477396117694.png" width="107" height="54">
+                                        </a>
+                                        <!-- 2 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/14477401441546.png" width="107" height="54">
+                                        </a>
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/14477308355912.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/14477391395609.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                    <!-- 4 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!-- 1 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/14477302246498.png" width="107" height="54">
+                                        </a>
+                                        <!-- 2 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/14477452673974.png" width="107" height="54">
+                                        </a>
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/14477272296808.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/14477391399663.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                    <!-- 5 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!-- 1 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/14477298392255.png" width="107" height="54">
+                                        </a>
+                                        <!-- 2 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/14477305449735.png" width="107" height="54">
+                                        </a>
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/14477312236406.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/14477320365133.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bx-controls bx-has-pager bx-has-controls-direction">
+                                <div class="bx-pager bx-default-pager">
+                                    <div class="bx-pager-item">
+                                        <a href="###" data-slide-index='0' class="bx-pager-link active">1</a>
+                                    </div>
+                                    <div class="bx-pager-item">
+                                        <a href="###" data-slide-index='1' class="bx-pager-link">2</a>
+                                    </div>
+                                    <div class="bx-pager-item">
+                                        <a href="###" data-slide-index='2' class="bx-pager-link">3</a>
+                                    </div>
+                                </div>
+                                <div class="bx-controls-direction">
+                                    <a class="bx-prev" href>Prev</a>
+                                    <a class="bx-next" href>Next</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods2">
+                    <!-- <div class="bx-wrapper" style="max-width:100%;margin:0px auto"> -->
+                    <div class="bx-wrapper">
+                        <!-- <div class="bx-viewport" style="width:100%;overflow:hidden;position:relative;height:370px"> -->
+                        <div class="bx-viewport">
+                            <!-- <ul class="goods2slider bxslider" style="width:315px;position:relative;transition-duration: 0s;transform:translate3d(-390px,0px,0px)"> -->
+                            <ul class="goods2slider bxslider">
+                               <!----
+                                <li style="float:left;list-style:none;position:relative;width:390px;" class="bx-clone">
+                                    <a href="###">
+                                        <img src="img/index/04shopping/01shoppcenter/01classic_bags/good_load.gif" alt="" class="loadimg" data-original="" height="370">
+                                    </a>
+                                    <div class="_slider_bord">
+                                        <dl>
+                                            <dd>Coach蔻驰</dd>
+                                            <dd>
+                                                <b></b>
+                                            </dd>
+                                            <dd>经典轻奢</dd>
+                                            <dt>简洁百搭</dt>
+                                        </dl>
+                                    </div>
+                                </li>--->
+                                <!-- <li style="float:left;list-style:none;position:relative;width:390px;" class="bx-clone"> -->
+                                <li>
+                                    <a href="###">
+                                        <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/155073079286_390x370.jpg" style="display:block" alt="" class="loadimg" data-original="" height="370">
+                                    </a>
+                                    <div class="_slider_bord">
+                                        <dl>
+                                            <dd>Armani</dd>
+                                            <dd>
+                                                <b></b>
+                                            </dd>
+                                            <dd>大牌缔造</dd>
+                                            <dt>精致妆容</dt>
+                                        </dl>
+                                    </div>
+                                </li>
+                                 <!----
+                                <li style="float:left;list-style:none;position:relative;width:390px;" class="bx-clone">
+                                    <a href="###">
+                                        <img src="img/index/04shopping/01shoppcenter/01classic_bags/good_load.gif" style="display:block" alt="" class="loadimg" data-original="" height="370">
+                                    </a>
+                                    <div class="_slider_bord">
+                                        <dl>
+                                            <dd>Coach蔻驰</dd>
+                                            <dd>
+                                                <b></b>
+                                            </dd>
+                                            <dd>经典轻奢</dd>
+                                            <dt>简洁百搭</dt>
+                                        </dl>
+                                    </div>
+                                </li>-->
+                            </ul>
+                        </div>
+                        <div class="bx-controls bx-has-controls-direction">
+                            <div class="bx-controls-direction">
+                                <a class="bx-prev disabled" style="left:-30px" href>Prev</a>
+                                <a class="bx-next disabled" style="left:-30px" href>Next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods3">
+                    <div class="goods3pic1">
+                        <a href="####">
+                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/156162764778_275x180.jpg" class="loadimg" data-orignal="" style="display:inline" width="275">
+                        </a>
+                    </div>
+                    <div class="goods3pic2">
+                        <a href="####">
+                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/156162764762_275x180.jpg" class="loadimg" data-orignal="" style="display:inline" width="275">
+                        </a>
+                    </div>
+                    <div class="goods3pic1">
+                        <a href="####">
+                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/156162764724_275x180.jpg" class="loadimg" data-orignal="" style="display:inline" width="275">
+                        </a>
+                    </div>
+                    <div class="goods3pic2">
+                        <a href="####">
+                            <img src="img/index/04shopping/01shoppcenter/04nurse_makeup/156162764787_275x180.jpg" class="loadimg" data-orignal="" style="display:inline" width="275">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--个护化妆结束  -->
+            <!-- 时尚服饰开始 -->
+            <a name="fashion_apparel" id="fashion_apparel"></a>
+            <div class="goodstitle">
+                <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/goodtitle3.jpg" class="txt">
+                <div class="rightbtn">
+                    <a href="####">
+                        <span class="icon"></span>
+                        <span class="moretxt">SHOW MORE</span>
+                    </a>
+                </div>
+            </div>
+            <div class="goods">
+                <div class="goods1">
+                    <ul class="goodslinks">
+                        <li><a href="####">上装</a></li>
+                        <li><a href="####">裤装</a></li>
+                        <li><a href="####">裙装</a></li>
+                        <li><a href="####">内衣</a></li>
+                        <li><a href="####">套装</a></li>
+                        <li><a href="####">运动服</a></li>
+                        <li><a href="####">连衣裙</a></li>
+                        <li><a href="####">复古</a></li>
+                        <li><a href="####">欧美</a></li>
+                        <li><a href="####">修身</a></li>
+                    </ul>
+                    <div class="slider">
+                        <div class="bx-wrapper" style="max-width: 100%">
+                            <div class="bx-viewport" style="width: 100%;position:relative;overflow:hidden;height:114px">
+                                <ul class="sliderbox bxslider" style="width: 515%;position:relative;transition-duration:0s;transform:translate3d(-224px,0px,0px)">
+                                    <!-- 1 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!--1--> 
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/14477432418542.png" width="107" height="54">
+                                        </a>
+                                        <!---2-->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/14477378676085.png" width="107" height="54">
+                                        </a>  
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/14477423102347.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/14477460482377.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                    <!-- 2 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!-- 1 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/14477468896235.png" width="107" height="54">
+                                        </a>
+                                        <!-- 2 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/14477468884790.png" width="107" height="54">
+                                        </a>
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/14477258985459.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/14477452686893.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                    <!-- 3 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!-- 1 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/14477306892349.png" width="107" height="54">
+                                        </a>
+                                        <!-- 2 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/14477389702112.png" width="107" height="54">
+                                        </a>
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/14477284515625.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/14477416926764.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                    <!-- 4 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!-- 1 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/14477432418542.png" width="107" height="54">
+                                        </a>
+                                        <!-- 2 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/14477378676085.png" width="107" height="54">
+                                        </a>
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/14477423102347.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/14477460482377.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                    <!-- 5 -->
+                                    <li class="bx-clone" style="float:left;list-style:none;position:relative;width:220px">
+                                        <!-- 1 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/14477468896235.png" width="107" height="54">
+                                        </a>
+                                        <!-- 2 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/14477468884790.png" width="107" height="54">
+                                        </a>
+                                        <!-- 3 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/14477258985459.png" width="107" height="54">
+                                        </a>
+                                        <!-- 4 -->
+                                        <a href="#####">
+                                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/14477452686893.png" width="107" height="54">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bx-controls bx-has-pager bx-has-controls-direction">
+                                <div class="bx-pager bx-default-pager">
+                                    <div class="bx-pager-item">
+                                        <a href="###" data-slide-index='0' class="bx-pager-link active">1</a>
+                                    </div>
+                                    <div class="bx-pager-item">
+                                        <a href="###" data-slide-index='1' class="bx-pager-link">2</a>
+                                    </div>
+                                    <div class="bx-pager-item">
+                                        <a href="###" data-slide-index='2' class="bx-pager-link">3</a>
+                                    </div>
+                                </div>
+                                <div class="bx-controls-direction">
+                                    <a class="bx-prev" href>Prev</a>
+                                    <a class="bx-next" href>Next</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods2">
+                    <!-- <div class="bx-wrapper" style="max-width:100%;margin:0px auto"> -->
+                    <div class="bx-wrapper">
+                        <!-- <div class="bx-viewport" style="width:100%;overflow:hidden;position:relative;height:370px"> -->
+                        <div class="bx-viewport">
+                            <!-- <ul class="goods2slider bxslider" style="width:315px;position:relative;transition-duration: 0s;transform:translate3d(-390px,0px,0px)"> -->
+                            <ul class="goods2slider bxslider">
+                               <!----
+                                <li style="float:left;list-style:none;position:relative;width:390px;" class="bx-clone">
+                                    <a href="###">
+                                        <img src="img/index/04shopping/01shoppcenter/01classic_bags/good_load.gif" alt="" class="loadimg" data-original="" height="370">
+                                    </a>
+                                    <div class="_slider_bord">
+                                        <dl>
+                                            <dd>Coach蔻驰</dd>
+                                            <dd>
+                                                <b></b>
+                                            </dd>
+                                            <dd>经典轻奢</dd>
+                                            <dt>简洁百搭</dt>
+                                        </dl>
+                                    </div>
+                                </li>--->
+                                <!-- <li style="float:left;list-style:none;position:relative;width:390px;" class="bx-clone"> -->
+                                <li>
+                                    <a href="###">
+                                        <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/156093601042_390x370.jpg" style="display:block" alt="" class="loadimg" data-original="" height="370">
+                                    </a>
+                                    <div class="_slider_bord">
+                                        <dl>
+                                            <dd>SIES MARJAN</dd>
+                                            <dd>
+                                                <b></b>
+                                            </dd>
+                                            <dd>轻松的色彩</dd>
+                                            <dt>时尚圈的宠儿</dt>
+                                        </dl>
+                                    </div>
+                                </li>
+                                 <!----
+                                <li style="float:left;list-style:none;position:relative;width:390px;" class="bx-clone">
+                                    <a href="###">
+                                        <img src="img/index/04shopping/01shoppcenter/01classic_bags/good_load.gif" style="display:block" alt="" class="loadimg" data-original="" height="370">
+                                    </a>
+                                    <div class="_slider_bord">
+                                        <dl>
+                                            <dd>Coach蔻驰</dd>
+                                            <dd>
+                                                <b></b>
+                                            </dd>
+                                            <dd>经典轻奢</dd>
+                                            <dt>简洁百搭</dt>
+                                        </dl>
+                                    </div>
+                                </li>-->
+                            </ul>
+                        </div>
+                        <div class="bx-controls bx-has-controls-direction">
+                            <div class="bx-controls-direction">
+                                <a class="bx-prev disabled" style="left:-30px" href>Prev</a>
+                                <a class="bx-next disabled" style="left:-30px" href>Next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods3">
+                    <div class="goods3pic1">
+                        <a href="####">
+                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/156265449150_275x180.jpg" class="loadimg" data-orignal="" style="display:inline" width="275">
+                        </a>
+                    </div>
+                    <div class="goods3pic2">
+                        <a href="####">
+                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/156265449246_275x180.jpg" class="loadimg" data-orignal="" style="display:inline" width="275">
+                        </a>
+                    </div>
+                    <div class="goods3pic1">
+                        <a href="####">
+                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/156265449230_275x180.jpg" class="loadimg" data-orignal="" style="display:inline" width="275">
+                        </a>
+                    </div>
+                    <div class="goods3pic2">
+                        <a href="####">
+                            <img src="img/index/04shopping/01shoppcenter/05fashion_apparel/156265449266_275x180.jpg" class="loadimg" data-orignal="" style="display:inline" width="275">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 时尚服饰结束 -->
+            <!-- 主题活动开始 -->
+            <div class="promotiontitle">
+                <img src="img/index/05promotion/promotiontitle.jpg"/>
+            </div>
+            <div class="promotionbox">
+                <div class="promotion1">
+                    <div class="promotion1pic pro1pic1">
+                        <a href="">
+                            <img src="img/index/05promotion/151574616190_598x293.jpg" class="loadimg" data-original="" style=display:block"/>
+                        </a>
+                    </div>
+                    <div class="promotion1pic pro1pic2">
+                        <a href="">
+                            <img src="img/index/05promotion/152482306884_293x293.jpg" class="loadimg" data-original="" style=display:block"/>
+                        </a>
+                    </div>
+                    <div class="promotion1pic">
+                        <a href="">
+                            <img src="img/index/05promotion/152482318682_293x293.jpg" class="loadimg" data-original="" style=display:block"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="promotion2">
+                    <div class="promotion1pic pro1pic2">
+                        <a href="">
+                            <img src="img/index/05promotion/153136426243_293x293.jpg" class="loadimg" data-original="" style=display:block"/>
+                        </a>
+                    </div>
+                    <div class="promotion1pic pro1pic2">
+                        <a href="">
+                            <img src="img/index/05promotion/153380348513_293x293.jpg" class="loadimg" data-original="" style=display:block"/>
+                        </a>
+                    </div>
+                    <div class="promotion1pic">
+                        <a href="">
+                            <img src="img/index/05promotion/155791457357_598x293.jpg" class="loadimg" data-original="" style=display:block"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="promotion3">
+                    <div class="proleft">
+                        <div class="proleftpic">
+                            <div class="proleftpicbox">
+                                <a href="">
+                                    <img src="img/index/05promotion/1promotionpic.jpg"/>
+                                </a>
+                                <div class="topline"></div>
+                                <div class="rightline"></div>
+                                <div class="bottomline"></div>
+                                <div class="leftline"></div>
+                            </div>
+                        </div>
+                        <div class="proleftpic">
+                            <div class="proleftpicbox">
+                                <a href="">
+                                    <img src="img/index/05promotion/2promotionpic.jpg"/>
+                                </a>
+                                <div class="topline"></div>
+                                <div class="rightline"></div>
+                                <div class="bottomline"></div>
+                                <div class="leftline"></div>
+                            </div>
+                        </div>
+                        <div class="proleftpic">
+                            <div class="proleftpicbox">
+                                <a href="">
+                                    <img src="img/index/05promotion/3promotionpic.jpg"/>
+                                </a>
+                                <div class="topline"></div>
+                                <div class="rightline"></div>
+                                <div class="bottomline"></div>
+                                <div class="leftline"></div>
+                            </div>
+                        </div>
+                        <div class="proleftpic">
+                            <div class="proleftpicbox">
+                                <a href="">
+                                    <img src="img/index/05promotion/4promotionpic.jpg"/>
+                                </a>
+                                <div class="topline"></div>
+                                <div class="rightline"></div>
+                                <div class="bottomline"></div>
+                                <div class="leftline"></div>
+                            </div>
+                        </div>
+                        <div class="proleftpic">
+                            <div class="proleftpicbox">
+                                <a href="">
+                                    <img src="img/index/05promotion/5promotionpic.jpg"/>
+                                </a>
+                                <div class="topline"></div>
+                                <div class="rightline"></div>
+                                <div class="bottomline"></div>
+                                <div class="leftline"></div>
+                            </div>
+                        </div>
+                        <div class="proleftpic">
+                            <div class="proleftpicbox">
+                                <a href="">
+                                    <img src="img/index/05promotion/6promotionpic.jpg"/>
+                                </a>
+                                <div class="topline"></div>
+                                <div class="rightline"></div>
+                                <div class="bottomline"></div>
+                                <div class="leftline"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="proright">
+                        <a href="####">
+                            <img src="img/index/05promotion/1bank.jpg"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 主题活动结束 -->
+        </div>
+        <script src="js/index.js"></script>
+    </body>
+</html> 

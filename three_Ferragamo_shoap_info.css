@@ -1,0 +1,77 @@
+.aui_state_focus{
+    position: absolute;
+    top:100px;
+    left:45%;
+    background: url(img/thress_Ferrgamo_shoap/info/14604469773476.png) no-repeat;
+    background-size: 100% 100%;
+}
+.aui_state_focus{
+    width: 400px;
+    height:235px;
+    cursor: move;
+}
+/* .aui_state_focus .aui_outer{
+    box-shadow: #000 0px 2px 16px;
+} */
+.aui_border{
+    box-shadow:inset 0 0 1px rgba(255, 255, 255, .9);
+}
+.aui_artHead{
+    width:100%;
+    overflow: hidden;
+}
+.times{
+    text-align: right;
+    padding:10px 10px 10px 0px;
+}
+.aui_tite{
+    margin-left: 50px;
+}
+.aui_tite b{
+    display: inline-block;
+    width:27px;
+    height:18px;
+    background: url(img/thress_Ferrgamo_shoap/info/skin_title.png)no-repeat;
+    float: left;
+    margin-top:4px;
+}
+.aui_tite span{
+    font-size: 18px;
+    color:#000;
+    float: left;
+    margin-left: 16px;
+    font-weight: bold;
+}
+.aui_artBody{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.aui_state_focus .aui_content{
+    padding: 20px 0px;
+    font-size: 15px;
+    font-family: "微软雅黑";
+}
+.aui_footer{
+    width: 100%;
+    height: 77px;
+    text-align: right;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+.aui_footer button{
+    display: inline-block;
+    padding: 0px 20px;
+    height:25px;
+    line-height: 25px;
+    vertical-align: middle;
+    color: #fff;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    border:0px;
+    cursor: pointer;
+    background-color: #d31920;
+    outline: 0px;
+    border-radius: 4px;
+}

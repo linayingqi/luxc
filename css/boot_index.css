@@ -1,0 +1,16 @@
+.navcol00a a,.guibinzhuanxian{
+    font-size: 0.75rem;
+    color:#ccc;
+}
+.navcol00a a:hover{
+    color: #b28247;
+
+}
+.nav_top::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.diwudadao{
+    margin-top:0.08rem;
+}

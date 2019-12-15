@@ -1,0 +1,247 @@
+.right_menu{
+    position: fixed;
+    z-index: 90;
+    top: 0;
+    right: 0;
+    width: 37px;
+    height: 100%;
+}
+.menuinfo{
+    background: #fff;
+    height: 100%;
+    width: 294px;
+    overflow-x:hidden;
+    margin: 0 auto; 
+}
+.right_menu dl{
+    height: 100%;
+    width: 335px;
+    overflow: hidden;
+}
+.right_menu dl dt{
+    width: 35px;
+    height: 100%;
+}
+.right_menu dl dd{
+    background: #000;
+    width: 298px;
+    height: 100%;
+}
+.right_menu dl dt,.right_menu dl dd{
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+}
+.right_menu-tab{
+    position: relative;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    background-color:#000;
+    cursor: pointer;
+    z-index: 90; 
+}
+.menu_block1{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0px;
+    width: 35px;
+    height: 105px;
+    background-color: #000;
+}
+.menu_block1 ul li,.menu_block2 ul li,.menu_block3 ul li{
+    display: block;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    z-index: 9;
+    vertical-align: top;
+    padding-bottom: 1px;
+}
+.menu_block3 ul li.kefu{
+    width: 40px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+.menu_block3 ul li a{
+    display: block;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.menu_block2 ul li,.menu_block3 ul li{
+    background-color:#333;
+    margin-bottom: 1px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.menu_block2 ul li:hover,.menu_block3 ul li:hover{
+    background-color: #c69c6d;
+}
+.menu_block2{
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    left: 0px;
+    width: 35px;
+    height: 234px;
+}
+.menu_block3{
+    position: absolute;
+    z-index: 2;
+    bottom: 35px;
+    left: 0px;
+    width: 35px;
+    height: 140px;
+}
+.tab-map-hover{
+    background-color: #ffba00;
+}
+.tab-feast-hover{
+    background-color: #ff4546;
+}
+.tab-tehui-hover{
+    background-color: #c90002;
+}
+.tab-tehui a{
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+.tab-logo{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 35px;
+    height: 35px;
+}
+.menu_block2 ul li a{
+    display: block;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.tab-logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 35px;
+    height: 35px;
+}
+.tab-logo_cart{
+    background: url(img/asides/share02.png) no-repeat -88px -156px;
+}
+.tab-logo_cart:hover{
+    background: url(img/asides/share02.png)no-repeat -88px -121px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.tab-logo_zichan{
+    background: url(img/asides/share02.png)no-repeat -140px -154px;
+}
+.tab-logo_zichan:hover{
+    background: url(img/asides/share02.png)no-repeat -141px -124px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.menu_zichan .current .tab-logo_zichan{
+    background: url(img/asides/lux_index.png) no-repeat -272px -54px;
+}
+.tab-tip-arr{
+    top: 10px;
+    right: -8px;
+    color: #fff;
+}
+.right_menu-arr{
+    position: absolute;
+    z-index: -1;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    font-size: 16px;
+   /* font-family: "\5b8b\4f53"*/
+}
+.right_menu-qrcode-tip{
+    position: absolute;
+    top: 0px;
+    right: 35px;
+    width: 124px;
+    height: 135px;
+    background: #fff;
+    z-index: 999999;
+    cursor: default;
+    border: 1px solid #e4e4e4;
+    border-right: 0;
+}
+.right_menu-qrcode-tip img{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.tab-tip{
+    position: absolute;
+    z-index: 999999;
+    right: 35px;
+    top: 0px;
+    width: 99px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    color: rgb(54, 54, 54);
+    background: rgb(255, 255, 255);
+    font-family: 微软雅黑;
+    font-size: 14px;
+    border-width: 1px 1px 1px;
+    border-style: solid none solid solid;
+    border-color:rgb(228,228,228) rgb(228,228,228) rgb(228,228,228);
+    border-image: initial;
+    border-right: none; 
+    display: none;
+}
+.tab-block:hover .tab-tip{
+    display: block;
+}
+.tab-logo_like{
+    background: url(img/asides/share02.png)no-repeat -202px -155px;
+}
+.tab-logo_like:hover{
+    background: url(img/asides/share02.png)no-repeat -203px -126px;
+    border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.tab-logo_kefu{
+    background: url(img/asides/share02.png)no-repeat -258px -125px;
+}
+.tab-logo_weixin{
+    background: url(img/asides/share02.png)no-repeat -312px -155px;
+}
+.tab-logo_weixin:hover{
+    background: url(img/asides/lux_index.png)no-repeat -475px -52px;
+}
+.tab-logo_fankui{
+    background: url(img/asides/share02.png)no-repeat -374px -157px;
+}
+.tab-logo_fankui:hover{
+    background: url(img/asides/lux_index.png)no-repeat -124px -52px;
+}
+.tab-logo_top{
+    background: url(img/asides/share02.png)no-repeat -437px -153px;
+}
+.tab-logo_top:hover{
+    background: url(img/asides/lux_index.png)no-repeat -401px -52px;
+}
+.tab-logo_line{
+    background: url(img/asides/line_bg.png)no-repeat 10px 9px;
+}
+.tab-logo_line:hover{
+    background: url(img/asides/line_bg.png)no-repeat 10px -19px;
+}
+
+
+
+

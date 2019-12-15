@@ -1,0 +1,432 @@
+.bd_bg{
+    background: #000 url(img/two_Ferrgamo_spec/brand01.jpg) no-repeat center top;
+}
+/* 品牌介绍 */
+.v30_1210{
+    width: 1210px;
+    margin: 0 auto;
+}
+.bd_intro{
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #fff;
+    position: relative;
+}
+.dbi_l{
+    width: 160px;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+.dbil_img{
+    width: 160px;
+    height: 88px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0px -1px 8px #999,1px 1px 8px #999,1px 1px 8px #999,-1px 1px 8px #999;
+}
+.dbil_fg{
+    width: 140px;
+    margin: 0 auto;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background-color: #7c665d;
+    text-align: center;
+    border-bottom-left-radius:7px;
+    border-bottom-right-radius: 7px;
+    box-shadow: 0px 3px 5px #000; 
+}
+.dbil_fg span{
+    line-height: 12px;
+    height: 12px;
+    color: #fff;
+}
+.dbilf_i{
+    display: none;
+    width: 24px;
+    height: 20px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+    background: url(img/icon_sprite/brandstore_share.png)no-repeat -308px -343px;
+}
+.dbi_r{
+    width: 950px;
+    padding-left: 220px;
+    min-height: 110px;
+}
+.dbir_head dl{
+    display: inline-block;
+    float: right;
+    line-height: 35px;
+}
+.dbir_head dl:first-child{
+    float: left;
+}
+.dbir_head dl dd{
+    float: left;
+    line-height: 35px;
+    padding-left: 7px;
+    color: #666;
+    padding-right: 22px;
+}
+.gd30_share dt{
+    width: 25px;
+    height: 35px;
+    float: left;
+    display: inline-block;
+    background: url(img/icon_sprite/brandstore_share.png)no-repeat -68px -334px;
+}
+.dbirh_f{
+    padding: 2px 13px;
+    border: 1px solid #bfa79d;
+    border-radius: 5px;
+    color:#3f2b2a;
+    cursor: pointer;
+}
+.dbirh_o{
+    color: #d00000;
+    cursor: pointer;
+}
+.dbir_body{
+    padding-top: 5px;
+    color: #999;
+    padding-left: 7px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+.dbirb_detail{
+    display: none;
+}
+/* 品牌介绍结束 */
+/* 所有品牌开始 */
+.v30_fsg_box{
+    background-color: #fff;
+    width: 1210px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+.brandCategory{
+    background-color: #fff;
+    overflow: hidden;
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 8px;
+}
+.brandsearch_yixuan{
+    margin: 0 auto;
+    overflow: hidden;
+    zoom:1;
+    padding: 8px 0;
+}
+.brandsearch_yixuan span{
+    float: left;
+    text-align: center;
+    border: 1px dotted #000;
+    min-width: 80px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    background-color: #fff;
+    font-size: 13px;
+    font-family: 宋体;
+    position: relative;
+    padding-right: 20px;
+}
+.brandsearch_yixuan span a{
+    color: #79502d;
+    padding: 0 10px;
+}
+.brandsearch_yixuan span a.all_brand{
+    font-weight: bold;
+}
+.brandsearch_yixuan span a:hover,.brandsearch_yixuan span.suoyou{
+    display: block;
+    color:#000;
+}
+.brandsearch_yixuan span.brandsearche_alltype{
+    position: relative;
+    padding:0 30px 0px 10px;
+    height: 25px;
+    line-height: 25px;
+    text-align: left;
+    overflow: hidden;
+}
+.brandsearch_yixuan span:first-child{
+    border: none;
+    min-width: 20px;
+    padding-left: 10px;
+}
+.brandsearch_yixuan b{
+    width: 28px;
+    float: left;
+    line-height: 25px;
+    display: inline-block;
+    background: url(img/icon_sprite/brandstore_share.png)no-repeat -106px -290px;
+}
+/* 所有品牌结束 */
+/* 分类开始 */
+.brandcategory_allc_lbie{
+    width: 1169px;
+    margin: 0 auto;
+    /* border: 1px solid #e6e6e6; */
+    border-bottom:1px solid #e6e6e6;
+    overflow: hidden;
+    zoom:1;
+    background-color: #fff;
+}
+.brand_category{
+    width: 50%;
+    overflow: hidden;
+    zoom:1;
+    min-height: 45px;
+    float: left;
+}
+.brandcategory_allc_bl{
+    width: 86px;
+    float: left;
+    text-align: center;
+}
+.brandcategory_allc_bl a{
+    font-weight: bold;
+    font-size: 13px;
+    color:#000;
+    background-color: #ebebeb;
+}
+.brandcategory_allc_br{
+    width: 390px;
+    float: left;
+    overflow: hidden;
+    zoom:1;
+    background-color: #fff;
+    min-height: 45px;
+}
+.brand_box_cate{
+    border-top: 1px solid #ebe3dc;
+    background: url(img/two_Ferrgamo_spec/fsg_bgl.jpg) repeat-y;
+    overflow:hidden;
+}
+.brand_allc_lbie{
+    width: 1210px;
+    margin: 0 auto;
+    border: 1px solid #bfbfbf;
+    overflow: hidden;
+    zoom:1;
+}
+.brand_text{
+    height: auto;
+    margin-left: 10px;
+    display: inline-block;
+}
+.brand_text a{
+    display: inline-block;
+    color: #6e3e0e;
+    height: 24px;
+    line-height: 24px;
+    vertical-align: middle;
+    float: left;
+    padding: 0px 7px;
+    margin: 8px 5px 0px 5px;
+    position: relative;
+}
+.brand_text a:hover,.attr_brand_big a:hover,a.all_check{
+    background-color: #c69c6d;
+    color: #fff;
+}
+/* 价格区间s */
+._moreshadow{
+    box-shadow: 0 0 0 #999,0 0 0 #999,0 0 0 #999,2px 2px 5px #999;
+}
+.brand_allc_lbie_fsg{
+    width: 1168px;
+    margin:0 auto;
+    overflow: hidden;
+    zoom:1;
+}
+.brand_allc_lbie_fsg ul li{
+    width: 100%;
+    overflow: hidden;
+    zoom: 1;
+    background:#e6e6e6;
+    border-top: 1px solid #e6e6e6;
+}
+.brand_allc_lbie_fsg ul li:first-child{
+    border-top:none;
+}
+.brand_allc_br_fsg{
+    width: 1085px;
+    float: left;
+    padding-bottom: 10px;
+    overflow: hidden;
+    zoom:1;
+    background-color: #fff;
+    min-height: 45px;
+}
+.brand_allc_bl_fsg{
+    width: 83px;
+    float: left;
+    text-align: left;
+    font-weight: 500;
+    font-size: 13px;
+    color: #6e3e0e;
+    text-indent: 20px;
+}
+/* 综合 */
+.v30_list_filter{
+    padding:9px 9px;
+    background: #f2f2f2;
+    color: #666;
+    font-size: 13px;
+}
+.vlf_box1{
+    line-height: 25px;
+    height: 25px;
+    float:left;
+    background-color: #fff;
+    display: block;
+    width: 310px;
+    border: 1px solid #c9c9c9;
+    overflow: hidden;
+}
+.vlf_box1 li{
+    display: inline-block;
+    float: left;
+    width: 50px;
+    position: relative;
+    font-size: 13px;
+    padding-left: 10px;
+    border-right: 1px solid #c9c9c9;
+}
+.vlf_box1 b{
+    line-height: 25px;
+    height: 25px;
+    width: 10px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    background: url(img/icon_sprite/brandstore_share.png)no-repeat -314px -230px;
+}
+.vlf_box1 .vlfb_pup{
+    line-height: 25px;
+    height: 25px;
+    width: 10px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    background: url(img/icon_sprite/brandstore_share.png)no-repeat -234px -230px;
+}
+.vlf_box1 .vlfb_pdown{
+    line-height: 27px;
+    height: 27px;
+    width: 10px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    background: url(img/icon_sprite/brandstore_share.png)no-repeat -274px -230px;
+}
+.sort_desc{
+    background: #c69c6d;
+    color: #fff;
+}
+/* 商品列表 */
+.st_block{
+    width: 1210px;
+}
+.st_block .stblock_body{
+    width: 1208px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.stblock_body dl{
+    display: block;
+    overflow: hidden;
+}
+.stblock_body dl dd{
+    display: block;
+}
+.v30_pitem{
+    width: 302px;
+    min-height: 440px;
+    float: left;
+    padding-bottom: 20px;
+}
+.v30p_inbox{
+    padding: 10px;
+    width: 270px;
+    margin: 0 auto;
+    background: #fff;
+    min-height: 440px;
+    position: relative;
+    overflow: auto;
+}
+.v30p_inbox:hover{
+    background-color: #f2f2f2;
+}
+.v30p_inbox ul{
+    display: block;
+    width: 270px;
+    background-color: #fff;
+    height: auto;
+    padding-bottom: 20px;
+    min-height: 440px;
+}
+.v30pi_img{
+    display: block;
+    max-width: 267px;
+    height: 267px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.v30pi_img img{
+    max-width: 267px;
+    height: 267px;
+}
+.v30p_inbox ul li{
+    text-align: center;
+}
+.v30p_inbox p._classic{
+    background: url(img/icon_sprite/share02.png)no-repeat -84px -55px;
+    width: 61px;
+    height: 61px;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+}
+.v30p_inbox p._sold{
+    background: url(img/icon_sprite/share02.png)no-repeat 0 0;
+    width: 222px;
+    height: 45px;
+    position: absolute;
+    display: block;
+    top: 150px;
+    left: 50%;
+    margin-left: -111px;
+}
+.v30p_inbox p._flashship{
+    background: url(img/icon_sprite/share02.png)no-repeat -159px -55px;
+    width: 62px;
+    height: 62px;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+}
+.v30p_inbox p._promote{
+    background: url(img/icon_sprite/share02.png)no-repeat 0px -55px;
+    width: 61px;
+    height: 61px;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+}
+.pages_con{
+    width: 1000px;
+    margin: 30px auto;
+    line-height: 30px;
+    text-align: center;
+}

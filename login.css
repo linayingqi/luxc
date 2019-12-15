@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: rgb(0,0,0);
+    text-size-adjust: none;
+    font: 12px/200% "microsoft yahei",Helvetica,Arial,Tahoma,sans-serif;
+}
+a:focus{
+    outline: none;
+}
+i{
+    font-style: normal;
+}
+input{
+    outline: none;
+    box-shadow: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+input:focus{
+    border-color: #000;
+}
+.input-error:focus{
+    border-color: #f62b0f;
+}
+.login-header{
+    height: 98px;
+}
+.login-header .login-header-center{
+    width: 1210px;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 0;
+}
+.login-header .login-header-center .fivelux-logo{
+    display: inline-block;
+    height: 98px;
+    width: 244px;
+    background-size:244px 98px;
+    background-repeat: no-repeat;
+    background-image:url(img/login/5luxlogo.jpg);
+    vertical-align: middle;
+}
+.login-header .login-header-center .header-line{
+    display: inline-block;
+    width: 2px;
+    height: 44px;
+    vertical-align: middle;
+    background-color: #ccc;
+    margin: 0 18px;
+}
+.login-header .login-header-center .header-text{
+    display: inline-block;
+    font-size: 22px;
+    color:#999;
+    vertical-align: middle;
+}
+.login-header .login-header-center .header-right{
+    display: table;
+    *zoom:1;
+    *display:block;
+    font-size: 0;
+    height: 100%;
+}
+.login-header .login-header-center .header-right i{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    padding-right: 10px;
+    background-image: url(img/login/phone-logo.png);
+    background-size: 19px 19px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+.login-header .login-header-center .header-right p{
+    display: inline-block;
+    *zoom:1;
+    *display: block;
+    color: #666;
+    font-size: 13px;
+    vertical-align: middle;
+}
+.login-warpper{
+    width: 100%;
+    text-align: center;
+    background-color:#262626; 
+}
+.login-warpper .login-center-wp{
+    position: relative;
+    width: 1210px;
+    height: 100%;
+    padding: 30px 0;
+    background-image:url(img/login/login_background1.jpg); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 584px;
+    margin: 0 auto;
+}
+.login-warpper .login-center-wp .login-c-right{
+    width: 400px;
+    float: right;
+    margin-right: 40px;
+    padding: 30px 0;
+    background: #fff;
+}
+.login-c-right .log-title{
+    margin: 0 auto;
+    margin-top: 34px;
+    font-size: 20px;
+    line-height: 20px;
+    height: 20px;
+    color: #999;
+}
+.login-c-right .log-title .log-title-list{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    width: 49%;
+    /* width: 185px; */
+    text-align: center;
+    cursor: pointer;
+}
+.login-c-right .log-title .list-active{
+    color: #000;
+}
+.log-body{
+    width: 100%;
+    height: 380px;
+}
+.log-body .is-hook{
+    height: 100%;
+}
+.is-qcode .is-qcode-con .start-text{
+    padding-top: 25px;
+    font-size: 14px;
+    color: #999; 
+}
+.is-qcode .is-qcode-con .q-faild,.is-qcode .is-qcode-con .q-faild-mk{
+    width: 160px;
+    height: 160px;
+    background-repeat: no-repeat;
+    background-size: 160px 160px;
+    margin: 0 auto;
+}
+.q-faild-mk{
+    background-image:url(img/login/mark.png); 
+}
+.q-faild-mk-tt{
+    height: 18px;
+    line-height: 18px;
+    font-size: 18px;
+    padding: 48px 0 20px;
+    color: #fff;
+    text-align: center;
+}
+.q-faild-mk-cn{
+    display: block;
+    font-size: 14px;
+    width: 100px;
+    height: 28px;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    margin:0 auto;
+    background-size:100px 28px;
+    background-repeat: no-repeat;
+    background-image: url(img/login//orange-border.png); 
+}
+.q-faild-mk-cn:visited{
+    color: #fff;
+}
+.q-faild-mk-cn:link{
+    color:#fff;
+}
+.log-body .is-qcode{
+    text-align: center;
+    display: table;
+}
+.is-qcode .is-qcode-con{
+    display: table-cell;
+    width: 400px;
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+}
+.is-qcode .is-qcode-con .qcode-hook{
+    display: inline-block;
+    *zoom:1;
+    *display:block;
+    transition: .7s;
+}
+.qcode-hook .scanqrcode_img{
+    vertical-align: top;
+}
+.qcode-hook .qc-img{
+    vertical-align: top;
+    margin-left: 20px;
+    height: 165px;
+    display: none;
+    width: 0;
+}
+.is-hook .is-qcode-con:hover .qcode-hook .qc-img{
+    display: inline-block;
+    width: 165px;
+}
+.log-body .is_user #submit{
+    padding-top: 20px;
+}
+.log-body .is_user #submit .inp-hook{
+    display: block;
+    margin: 0 31px;
+    margin-top: 16px;
+    width: 296px;
+    height: 48px;
+    border: 1px solid #ccc;
+    padding: 0 20px;
+    font-size: 14px;
+}
+.log-body .is_user #submit .error-tip{
+    width: 338px;
+    margin: 0 31px;
+    height: 54px;
+}
+.sub-btn{
+    transition: all linear 0.5s;
+    width: 338px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background: #333;
+    margin: 0 31px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+.sub-btn:hover{
+    background: #a60000;
+}
+.sub-bottom{
+    margin: 0 31px;
+    margin-top: 20px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 0;
+    color: #999;
+}
+.sub-bottom .sub-bottom-left label{
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    background-image: url(img/login/is_yes_bg.png);
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.sub-bottom .sub-bottom-left label i{
+    display: none;
+    width: 14px;
+    height: 14px;
+    background: url(img/login/is_yes.png)no-repeat 14px 14px;
+}
+.sub-bottom .sub-bottom-left label input:checked+i{
+    display: inline-block;
+}
+.sub-bottom .sub-bottom-left p{
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.sub-bottom .sub-bottom-right{
+    height: 100%;
+    font-size: 14px;
+}
+.sub-bottom .sub-bottom-right a{
+    color:inherit;
+    text-decoration: none;
+}
+.log-body .is_user #submit .error-tip .error-tip-wp{
+    font-size: 0;
+    display: inline-block;
+    color: #f62b0f;
+    height: 14px;
+    line-height: 14px;
+    margin: 20px 0;
+}
+.error-tip .error-tip-wp .tip-logo{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image:url(img/login/close.png);
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    vertical-align: middle;  
+}
+.error-tip .error-tip-wp .tip-text{
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.other-type{
+    height: 16px;
+    width: 100%;
+    background: url(img/login/other-type.jpg) 100% 100% no-repeat;
+}
+.is_ot{
+    height: 74px;
+    position: relative;
+    margin: 0 94px;
+}
+.ul-hook{
+    position: absolute;
+    width: 100%;
+    height: 32px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.is_ot .li-hook{
+    height: 32px;
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+.is_ot .li-hook i{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background-repeat:no-repeat;
+    background-size: 32px 32px;
+    cursor: pointer; 
+}
+.is_ot .li-hook .is_wx{
+    background-image: url(img/login/is_wx.png);
+}
+.is_ot .li-hook .is_wx:hover{
+    background-image: url(img/login/is_wx_sel.png);
+}
+.is_ot .li-hook .is_qq{
+    background-image: url(img/login/is_qq.png);
+}
+.is_ot .li-hook .is_qq:hover{
+    background-image: url(img/login/is_qq_sel.png);
+}
+.is_ot .li-hook .is_wb{
+    background-image: url(img/login/is_wb.png);
+}
+.is_ot .li-hook .is_wb:hover{
+    background-image: url(img/login/is_wb_sel.png);
+}

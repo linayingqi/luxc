@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="v30_base.css">
+    <link rel="stylesheet" href="four_cars01.css">
+</head>
+<body>
+    <!-- 购物车 -->
+    <div id="cart">
+        <p class="cart_step1"></p>
+        <div class="clearboth"></div>
+        <div id="cart_tbody" style="position: relative">
+            <div style="position: absolute;bottom: 35px;right: 70px;z-index: 2;">
+                <img src="img/four_carts/147798521548_388x61.png" alt="">
+                <p style="position: absolute;bottom:18px;left:60px;color:#fff;font-size:13px;line-height:31px;text-align: center;">
+                    <span style="margin-left: 10px;">还差</span>
+                    <span style="color: #d20000">¥6,439.0</span>
+                    <span>即可享受[ 时尚管家 ]服务</span>
+                    <span style="color: #d20000;margin-left:10px;text-decoration:underline">
+                        <a href="##">去凑单</a>
+                </span>
+                </p>
+            </div>
+            <table width="1190" class="cart_goods" cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr>
+                        <th width="80" class="cart_tcheck">
+                            <input type="checkbox" name="product_checkall" value="1" class="cart_tfinput">全选
+                        </th>
+                        <th></th>
+                        <th width="233">商品名称</th>
+                        <th width="112">商品属性</th>
+                        <th width="170">购物价</th>
+                        <th width="112">购买数量</th>
+                        <th width="167">活动信息</th>
+                        <th width="176">小计</th>
+                        <th width="75" class="cart_operate">操作</th>
+                    </tr>
+                    <!-- 当购物车有数据的时候向表格中插入一条数据 -->
+                    <tr>
+                        <td class="border_v tr_lineleft" width="40">
+                            <input type="checkbox" name="product_selected_" value="12980" checked>
+                        </td>
+                        <td class="border_v" height="100">
+                            <a href="##">
+                                <img src="img/four_carts/12980_thumb_G_1304502944420.jpg" alt="">
+                            </a>
+                        </td>
+                        <td class="border_v" style="width:200px">
+                            <a href="###">Ferragamo 费拉格慕 紫色经典小牛皮褶皱女式平底鞋</a>
+                        </td>
+                        <td class="border_v"></td>
+                        <td class="border_v td_price">3560.00</td>
+                        <td class="border_v">
+                            <p class="cart_goods_num">
+                                <a href="javascript:void(0);" class="cart-reduce" id="reduce-12980-12980">-</a>
+                                <input type="text" value="1" readonly>
+                                <a href="javascript:void(0);" class="cart-increase" id="reduce-12980-12980">+</a>
+                            </p>
+                        </td>
+                        <td class="border_v"></td>
+                        <td class="border_v tr_price">3560</td>
+                        <td class="border_v border_r cart_goods_ope tr_operate">
+                            <a href="javascript:void(0);" class="cart-remove" id="remove-12980-12980">删除</a>
+                            <a href="javascript:void(0);" class="goods-collect" id="remove-12980-12980">移入收藏夹</a>
+                            <a href="javascript:void(0);" id="addpack_12980" style="display: block"class="cart_dz_btn">
+                                <b></b>
+                                定制包装
+                            </a>
+                            <a href="javascript:void(0);" id="cancelpack_12980" style="display: none" class="cart_qx_btn">
+                                <b></b>
+                                取消包装
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- 当购物车没有数据的时候样式，如果有数据将替换为 -->
+            <!-- <div class="blanks">
+                <span class="blanks01">您还没有购买商品哦</span>
+                <span class="blanks02">
+                    <a href="/">去首页看看>></a>
+                </span>
+            </div> -->
+            <!-- 当购物车有数据的时候 -->
+            <div class="btn_price_info clearfix">
+                <div class="check_info">
+                    <input type="checkbox" name="product_checkall" value="1" class="cart_tfinput" checked>
+                    <a href="javascript:void(0)">全选</a>&nbsp;&nbsp;
+                    <a href="##">继续购物</a>&nbsp;&nbsp;
+                    <a href="javascript:void(0)" class="cart_goods_empty">清空购物车</a>
+                </div>
+                <div class="btn_price_area">
+                    <p class="textm">
+                        <span>
+                            已选商品
+                            <i class="red_number">: 1</i>
+                            件
+                        </span>
+                        <span>商品总金额(不含运费)：</span>
+                        <strong class="total_price">￥3,560.00</strong>
+                        <a href="##" class="mleft20 click_con">
+                            &nbsp;
+                            <span id="cart_confirm" class="all_bigBtn allred_btn check_btn">点击结算</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/four_cars01.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: rgb(0,0,0);
+    text-size-adjust: none;
+    font: 12px/200% "microsoft yahei",Helvetica,Arial,Tahoma,sans-serif;
+}
+a:focus{
+    outline: none;
+}
+i{
+    font-style: normal;
+}
+input{
+    outline: none;
+    box-shadow: none;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+input:focus{
+    border-color: #000;
+}
+.input-error:focus{
+    border-color: #f62b0f;
+}
+.login-header{
+    height: 98px;
+}
+.login-header .login-header-center{
+    width: 1210px;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 0;
+}
+.login-header .login-header-center .fivelux-logo{
+    display: inline-block;
+    height: 98px;
+    width: 244px;
+    background-size:244px 98px;
+    background-repeat: no-repeat;
+    background-image:url(img/login/5luxlogo.jpg);
+    vertical-align: middle;
+}
+.login-header .login-header-center .header-line{
+    display: inline-block;
+    width: 2px;
+    height: 44px;
+    vertical-align: middle;
+    background-color: #ccc;
+    margin: 0 18px;
+}
+.login-header .login-header-center .header-text{
+    display: inline-block;
+    font-size: 22px;
+    color:#999;
+    vertical-align: middle;
+}
+.login-header .login-header-center .header-right{
+    display: table;
+    *zoom:1;
+    *display:block;
+    font-size: 0;
+    height: 100%;
+}
+.login-header .login-header-center .header-right i{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    padding-right: 10px;
+    background-image: url(img/login/phone-logo.png);
+    background-size: 19px 19px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+.login-header .login-header-center .header-right p{
+    display: inline-block;
+    *zoom:1;
+    *display: block;
+    color: #666;
+    font-size: 13px;
+    vertical-align: middle;
+}
+.login-warpper{
+    width: 100%;
+    text-align: center;
+    background-color:#262626; 
+}
+.login-warpper .login-center-wp{
+    position: relative;
+    width: 1210px;
+    height: 100%;
+    padding: 30px 0;
+    background-image:url(img/login/login_background1.jpg); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 584px;
+    margin: 0 auto;
+}
+.login-warpper .login-center-wp .login-c-right{
+    width: 400px;
+    float: right;
+    margin-right: 40px;
+    padding: 30px 0;
+    background: #fff;
+}
+/* 注册页面顶端 */
+.heig48{
+    height: 48px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+.w300{
+    padding: 0 19px;;
+    width: 300px;
+}
+.w152{
+    padding: 0 19px;
+    width: 142px;
+}
+.rigister-title{
+    padding: 35px 0;
+    font-size: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+}
+.register-c-right{
+    padding: 0 30px;
+    width: 340px;
+    font-size: 0;
+    background: #fff;
+}
+.register-c-right .reg-errorTip{
+    display: table;
+}
+.reg-errorTip-box{
+    display: none;
+    vertical-align: middle;
+    height: 14px;
+    padding: 10px 0px 10px 0px;
+}
+.reg-errorTip-box i{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-image: url(img/login/close.png);
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.reg-errorTip-box p{
+    font-size: 14px;
+    line-height: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    color:#f62b0f;
+}
+.codeWarpper{
+    padding-bottom: 16px;
+}
+.codeWarpper input{
+    margin-right: 27px;
+    vertical-align: middle;
+}
+.codeWarpper span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    cursor: pointer;
+}
+.seg-tip{
+    height: 54px;
+    display: table;
+}
+.seg-tip-box{
+    display: table-cell;
+    vertical-align: middle;
+    height: 14px;
+}
+.seg-tip-box i{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-image: url(img/login/tan-log.png);
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.seg-tip-box p{
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    color:#999;
+}
+.sub-btn{
+    transition: 0.5s;
+    width: 340px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color:#fff;
+    background: #333;
+    margin: 24px 0 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+.sub-btn:hover{
+    background: #a60000;
+}
+.rig-bottom{
+    height: 14px;
+    line-height: 14px;
+    padding-bottom:30px;
+}
+.rig-bottom label{
+    cursor: pointer;
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    background-image: url(img/login/is_yes_bg.png);
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    vertical-align: middle;
+    margin-right: 5px; 
+}
+.rig-bottom label input{
+    display: none;
+}
+.rig-bottom label i{
+    display: none;
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-image: url(img/login/is_yes.png);
+}
+.rig-bottom label input:checked+i{
+    display: inline-block;
+}
+.rig-bottom p,.rig-bottom a{
+    display: inline-block;
+    font-size:13px;
+    height: 14px;
+    line-height: 14px;
+    vertical-align: middle;
+}
+.rig-bottom a{
+    text-decoration: none;
+}
+.rig-bottom .fir-link{
+    color: #333;
+}
+.rig-bottom p{
+    color:#999;
+}
+.rig-bottom .sec-link{
+    color: #ff9900;
+}
